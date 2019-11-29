@@ -1,0 +1,22 @@
+.main-navigation__list {
+  display: flex;
+  color: #ffffff;
+  list-style: none;
+  padding: 0px;
+}
+
+.main-navigation__description {
+  opacity: .7;
+}
+
+.main-navigation__description:hover {
+  opacity: 1;
+  transition: all .3s;
+}
+
+.main-navigation__item:not(:last-child) {
+  margin-right: 25px;
+}
+.main-navigation__link {
+  color: #ffffff;
+}

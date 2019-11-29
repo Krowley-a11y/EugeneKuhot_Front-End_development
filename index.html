@@ -1,84 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-<!-- 	<link rel="stylesheet" href="css/normalize.css">
- 	<link rel="stylesheet" href="css/style.css"> -->
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/scaffolding.css">
+  <link rel="stylesheet" href="css/container.css">
+ 	<link rel="stylesheet" href="css/page-header.css">
+  <link rel="stylesheet" href="css/social.css">
+  <link rel="stylesheet" href="css/main-navigation.css">
+  <link rel="stylesheet" href="css/page-main.css">
+  <link rel="icon" type="image/png" href="img/png/favicon.png" />
 	<title>Eugene Kuhot. Front-end development</title>
 </head>
 <body>
+  <div style="display:none">
+    <svg>
+      <symbol id="github" width="29" height="29" viewBox="0 0 478.165 478.165">
+        <g fill="#ffffff">
+          <path id="Github__x28_alt_x29__3_" d="M349.22,55.768c6.136,14.046,10.241,37.556,4.224,54.69 c24.426,20.999,33.073,71.904,21.079,113.704c35.006,2.73,76.666-1.235,103.642,9.484c-25.183-3.248-59.651-9.563-91.987-7.431 c-6.136,0.458-15.361-0.239-14.903,8.408c37.735,3.008,75.092,6.117,105.894,15.779c-30.702-4.981-67.74-12.552-105.894-13.668 c-15.54,30.921-47.239,46.262-90.991,49.49c4.682,10.261,13.847,14.066,15.879,30.702c3.267,24.406-4.881,60.328,3.208,76.686 c4.064,7.89,10.579,8.009,14.863,14.604c-10.699,12.871-37.257-1.395-40.186-14.604c-5.14-22.852,7.89-58.256-6.415-73.737 c0.996,24.865-5.718,59.85,0.996,82.145c2.789,8.806,10.659,12.113,8.647,20.063c-49.809,5.08-28.989-64.373-37.177-105.356 c-7.471,0.697-4.204,11.197-4.224,15.76c-0.199,40.106,8.189,94.836-34.846,89.556c-1.315-8.348,5.838-11.217,8.467-19.007 c7.91-22.434-1.454-56.045,2.112-83.161c-16.417,12.512,1.793,55.666-8.428,77.961c-5.838,12.671-24.785,18.27-39.19,12.651 c1.873-9.464,11.695-7.989,15.879-16.875c5.818-12.452,0.02-30.244,2.092-48.494c-30.423,6.097-53.993-0.877-65.608-20.023 c-5.12-8.507-6.356-18.708-12.632-26.219c-6.117-7.551-16.098-8.507-19.087-18.808c37.755-9.185,39.17,38.771,73.06,39.807 c10.44,0.418,15.799-2.909,25.402-5.16c2.749-12.113,8.428-21.039,16.875-27.494c-42.078-5.658-76.865-18.788-93.023-50.466 c-38.293,1.893-73.339,7.013-105.894,14.843c29.547-10.679,65.807-14.604,104.778-15.819c-2.351-13.807-22.434-10.022-34.866-9.543 C47.677,227.17,18.449,230.138,0,233.645c26.817-9.543,64.233-8.348,100.454-8.428c-11.038-34.767-7.232-90.014,17.015-110.615 c-6.854-17.254-4.722-45.346,4.184-58.834c27.036,1.175,43.374,12.891,60.388,24.247c21.019-6.017,43.035-9.045,71.904-7.451 c12.133,0.677,24.705,6.097,33.731,5.32c8.906-0.877,18.728-10.898,27.534-14.843C326.507,58.099,336.17,56.206,349.22,55.768z"/>
+        </g>
+      </symbol>
 
+      <symbol id="gmail" width="22" height="22" viewBox="0 0 512.000000 512.000000">
+        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#ffffff" stroke="none">
+          <path d="M40 4341 l0 -138 1250 -1187 c688 -653 1257 -1189 1265 -1192 8 -4 421 381 1097 1023 596 566 1089 1033 1096 1037 9 6 12 -311 12 -1458 l0 -1466 -2200 0 -2200 0 0 1080 0 1080 -160 0 -160 0 0 -1240 0 -1240 2520 0 2520 0 0 1920 0 1920 -2520 0 -2520 0 0 -139z m3518 -1123 c-545 -519 -994 -943 -998 -943 -4 0 -453 424 -998 943 l-992 942 1990 0 1990 0 -992 -942z"/>
+        </g>
+      </symbol>
+
+      <symbol id="skype" width="22" height="22" viewBox="0 0 512.000000 512.000000">
+        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#ffffff" stroke="none">
+          <path d="M1240 5106 c-591 -87 -1051 -519 -1177 -1106 -25 -117 -25 -450 -1 -558 28 -121 68 -236 117 -335 l46 -94 -11 -70 c-176 -1049 340 -2077 1283 -2556 220 -112 441 -185 688 -229 165 -29 528 -36 704 -14 l132 17 107 -45 c821 -346 1736 125 1927 994 10 44 19 144 22 241 8 231 -19 383 -103 586 l-34 83 14 72 c44 231 47 613 7 843 -187 1084 -1070 1899 -2162 1996 -146 13 -375 8 -530 -12 -94 -12 -96 -11 -135 13 -102 64 -287 133 -437 164 -106 21 -343 26 -457 10z m1536 -897 c230 -22 390 -65 569 -154 302 -149 497 -414 483 -654 -10 -175 -157 -311 -337 -311 -149 0 -217 48 -331 231 -161 260 -245 329 -444 364 -391 67 -756 -86 -758 -318 0 -30 5 -70 11 -89 26 -77 165 -175 321 -226 36 -12 196 -53 355 -92 502 -121 676 -177 864 -276 124 -66 202 -124 273 -205 146 -165 206 -349 195 -598 -13 -307 -156 -558 -422 -741 -61 -42 -225 -123 -304 -149 -190 -65 -431 -101 -667 -101 -410 0 -713 77 -972 247 -75 49 -237 212 -287 288 -172 262 -193 514 -53 640 95 87 233 117 353 79 96 -30 161 -99 241 -257 122 -241 184 -317 312 -385 107 -57 196 -75 372 -75 264 -1 422 48 562 173 68 61 105 131 114 216 16 154 -55 270 -216 354 -93 48 -208 81 -540 159 -590 136 -816 233 -1016 437 -93 95 -152 197 -186 321 -28 106 -30 307 -4 408 91 345 386 582 846 679 188 40 469 55 666 35z"/>
+        </g>
+      </symbol>
+
+      <symbol id="instagram" width="22" height="22" viewBox="0 0 512.000000 512.000000">
+        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#ffffff" stroke="none">
+          <path d="M1490 5030 c-234 -13 -425 -64 -620 -167 -440 -231 -699 -576 -764 -1016 -23 -154 -24 -2474 -1 -2615 39 -239 144 -454 321 -656 204 -233 460 -389 757 -461 192 -47 276 -50 1437 -49 1063 1 1087 1 1202 22 226 41 451 132 633 256 109 74 291 253 362 356 107 157 186 348 219 532 15 84 17 208 15 1323 -2 1351 -1 1323 -63 1510 -137 412 -522 773 -960 899 -186 54 -232 58 -738 66 -575 10 -1614 10 -1800 0z m2270 -393 c47 -8 118 -24 158 -36 307 -92 571 -327 691 -615 61 -147 60 -123 64 -1355 3 -618 1 -1170 -4 -1227 -29 -371 -229 -653 -591 -835 -98 -49 -207 -86 -317 -107 -77 -15 -203 -16 -1176 -15 -945 0 -1104 3 -1193 17 -256 39 -451 135 -618 301 -127 128 -209 251 -258 393 -52 147 -51 120 -49 1402 2 1312 -1 1253 63 1418 68 177 223 367 388 476 156 103 373 179 560 196 53 5 570 7 1147 5 849 -3 1066 -7 1135 -18z"/>
+          <path d="M3775 4121 c-46 -21 -98 -69 -123 -115 -12 -23 -17 -55 -17 -121 0 -100 11 -129 67 -185 47 -47 103 -70 173 -70 145 0 245 104 245 255 0 151 -100 255 -245 255 -37 0 -76 -8 -100 -19z"/>
+          <path d="M2405 3784 c-307 -48 -590 -217 -775 -463 -71 -93 -155 -268 -187 -386 -25 -92 -27 -116 -27 -290 -1 -208 9 -264 74 -435 84 -217 266 -429 478 -558 78 -48 226 -108 322 -132 121 -31 361 -38 489 -16 247 43 466 160 641 343 218 226 320 479 320 793 0 261 -71 479 -221 680 -132 176 -282 294 -482 380 -152 65 -237 81 -432 85 -93 2 -183 1 -200 -1z m360 -395 c44 -10 123 -40 175 -66 79 -39 111 -63 186 -138 158 -157 224 -302 232 -510 8 -241 -68 -428 -241 -591 -155 -146 -326 -214 -542 -214 -156 0 -281 34 -413 111 -80 48 -220 189 -270 274 -164 281 -132 635 79 881 197 228 497 324 794 253z"/>
+        </g>
+      </symbol>
+
+      <symbol id="facebook" width="30" height="30" viewBox="0 0 512.000000 512.000000">
+        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#ffffff"stroke="none">
+          <path d="M2890 4140 c-276 -27 -477 -172 -567 -408 -43 -115 -52 -195 -53 -474 l0 -258 -240 0 -240 0 0 -285 0 -285 240 0 240 0 0 -715 0 -715 290 0 290 0 0 715 0 715 240 0 240 0 4 23 c7 28 66 509 66 531 0 14 -29 16 -276 16 l-276 0 4 223 c5 248 12 282 74 336 50 45 91 53 302 58 l192 5 0 253 0 253 -112 6 c-229 11 -345 13 -418 6z"/>
+        </g>
+      </symbol>
+    </svg>
+  </div>
   <header class="page-header">
-    <h1 class="page-header__greeting">I am Eugene Kuhot</h1>
+    <div class="page-header__wrapper container">
+      <div class="page-header__header-top">
 
-    <p class="page-header__greeting-description">
+        <div class="page-header__logo-wrapper">
 
-    </p>
+        </div>
 
-    <a href="yevhenii-kuhot_cv.pdf" class="page-header__download-cv">
-      My CV
-    </a>
+        <nav class="main-navigation">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link">
+                <span class="main-navigation__description">Experience</span>
+              </a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link">
+                <span class="main-navigation__description">Education</span>
+              </a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link">
+                <span class="main-navigation__description">Skills</span>
+              </a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link">
+                <span class="main-navigation__description">Portfolio</span>
+              </a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link">
+                <span class="main-navigation__description">Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-    <div class="page-header__social social">
-      <h2 class="visually-hidden">My social networks</h2>
+      </div>
 
-      <ul class="social__list">
+      <div class="page-header__middle">
 
-        <li class="social__item">
-          <a class="social__link social__link--github" href="https://github.com/Jesus-Akbar" aria-label="Переход на мой GitHub аккаунт" target="_blank">GitHub
-            <svg height="22" width="22" role="img">
-              <use xlink:href="#icon-vk-mobile"></use>
-            </svg>
+        <div class="page-header__greeting-wrapper">
+          <h1 class="page-header__greeting">I am Eugene Kuhot</h1>
+
+          <p class="page-header__greeting-description">
+            И я ищу свою первую работу в сфере ИТ в качестве фронтенд разработчика.
+          </p>
+
+          <a href="yevhenii-kuhot_cv.pdf" class="page-header__download-cv" download>
+            <span class="page-header__download-white">Download</span>
+            <span class="page-header__download-black">CV</span>
           </a>
-        </li>
+        </div>
 
-        <li class="social__item">
-          <a class="social__link social__link--gmail" href="mailto:kz.grenlinefamily@gmail.com" aria-label="" target="_blank">Gmail
-            <svg height="22" width="22" role="img">
-              <use xlink:href="#icon-vk-mobile"></use>
-            </svg>
-          </a>
-        </li>
+        <div class="social">
+          <h2 class="visually-hidden">My social networks</h2>
 
-        <li class="social__item">
-          <a class="social__link social__link--skype" href="#" aria-label="" target="_blank">Skype
-            <svg height="22" width="22" role="img">
-              <use xlink:href="#icon-vk-mobile"></use>
-            </svg>
-          </a>
-        </li>
+          <ul class="social__list">
 
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/kz.greenline/" aria-label="" target="_blank">Instagram
-            <svg height="22" width="22" role="img">
-              <use xlink:href="#icon-vk-mobile"></use>
-            </svg>
-          </a>
-        </li>
+            <li class="social__item">
+              <a class="social__link social__link--git" href="https://github.com/Jesus-Akbar" aria-label="Переход на мой GitHub аккаунт" target="_blank">
 
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/profile.php?id=100013558486406" aria-label="" target="_blank">Facebook
-            <svg height="22" width="22" role="img">
-              <use xlink:href="#icon-vk-mobile"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+                <svg class="social__img social__img--github">
+                  <use xlink:href="#github"></use>
+                </svg>
 
+                <span class="social__link-description social__link-description--git">GitHub</span>
+              </a>
+            </li>
+
+            <li class="social__item">
+              <a class="social__link social__link--gmail" href="mailto:kz.greenlinefamily@gmail.com" aria-label="">
+
+                <svg class="social__img social__img--gmail">
+                  <use xlink:href="#gmail"></use>
+                </svg>
+
+                <span class="social__link-description social__link-description--gmail">Gmail</span>
+              </a>
+            </li>
+
+            <li class="social__item">
+              <a class="social__link social__link--skype" href="#" aria-label="" target="_blank">
+
+                <svg class="social__img social__img--skype">
+                  <use xlink:href="#skype"></use>
+                </svg>
+
+                <span class="social__link-description social__link-description--skype">Skype</span>
+              </a>
+            </li>
+
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/kz.greenline/" aria-label="" target="_blank">
+
+                <svg class="social__img social__img--instagram">
+                  <use xlink:href="#instagram"></use>
+                </svg>
+
+                <span class="social__link-description social__link-description--instagram">Instagram</span>
+             </a>
+            </li>
+
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/profile.php?id=100013558486406" aria-label="" target="_blank">
+
+                <svg class="social__img social__img--facebook">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+
+                <span class="social__link-description social__link-description--facebook">Facebook</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-
   </header>
 
   <main class="page-main">
-    <h2 class="visually-hidden">My features</h2>
-    <div class="features">
-      <ul class="features__list">
-        <li class="features__item"></li>
-        <li class="features__item"></li>
-        <li class="features__item"></li>
-      </ul>
+    <h2 class="visually-hidden"></h2>
+    <div class="page-main__linear-wrapper">
+
     </div>
 
   </main>

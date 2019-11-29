@@ -1,0 +1,79 @@
+.page-header {
+
+}
+
+.page-header__wrapper {
+  background-image: url(../img/jpg/header111.jpg);
+  background-repeat: no-repeat;
+  height: 960px;
+}
+
+.page-header__header-top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+
+
+.page-header__middle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__greeting-wrapper {
+  margin-top: 250px;
+}
+
+.page-header__greeting {
+  color: #ffffff;
+  text-align: center;
+}
+
+.page-header__greeting-description {
+  color: #ffffff;
+  width: 485px;
+  text-align: center;
+  line-height: 28px;
+}
+
+.page-header__download-cv {
+  display: flex;
+  width: 165px;
+  margin-left: 150px;
+}
+
+.page-header__download-cv:hover {
+  box-shadow: 0 0 20px #ffffff;
+  transition: .3s;
+}
+
+.page-header__download-black::after {
+  content:"";
+  position: absolute;
+  top: 14px;
+  left: 40px;
+  background-repeat: no-repeat;
+  background-image: url(../img/png/arrow.png);
+  width: 15px;
+  height: 11px;
+}
+
+.page-header__download-cv:hover .page-header__download-black::after,
+.page-header__download-cv:focus .page-header__download-black::after {
+   left: 45px;
+   transition: .3s;
+}
+
+.page-header__download-white {
+  padding: 10px 10px 10px 15px;
+  background-color: #ffffff;
+  font-weight: 600;
+}
+
+.page-header__download-black {
+  position: relative;
+  background-color: #000000;
+  color: white;
+  padding: 10px 35px 10px 10px;
+}
