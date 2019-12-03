@@ -1,0 +1,20 @@
+.skills__list {
+  display: flex;
+  padding: 0px;
+  width: 100%;
+  list-style: none;
+  background-color: #ffffff;
+  margin: 0px;
+}
+
+.skills__item {
+  width: 33%;
+  padding: 45px 20px;
+  text-align: center;
+  box-shadow: -1px 1px 5px rgba(0,0,0,0.5);
+
+}
+
+.skill__title {
+  margin-top: 0px;
+}

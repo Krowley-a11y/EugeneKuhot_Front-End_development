@@ -1,6 +1,6 @@
 .social {
-  width: 50px;
-  margin-top: 200px;
+  width: 23px;
+  padding-top: 200px;
 }
 
 .social__list {
@@ -26,38 +26,6 @@
   right: 5px;
 }
 
-.social__link-description {
-  max-width: 0px;
-  font-size: 0px;
-  position: absolute;
-  color: #ababab;
-  left: 10px;
-}
-
-.social__git-img {
-  margin-left: -4px;
-}
-
-.social__link-description--git {
-  top: -4px;
-}
-
-.social__link-description--gmail {
-  top: -7px;
-}
-
-.social__link-description--skype {
-  top: -7px;
-}
-
-.social__link-description--instagram {
-  top: -5px;
-}
-
-.social__link-description--facebook {
-  top: -3px;
-}
-
 .social__img {
   position: relative;
   width: 25px;
@@ -66,33 +34,36 @@
 }
 
 .social__img--instagram {
-  top: 2px;
+  top: -2px;
 }
 
-.social__link--git:hover .social__link-description--git,
-.social__link--gmail:hover .social__link-description--gmail,
-.social__link--skype:hover .social__link-description--skype,
-.social__link--instagram:hover .social__link-description--instagram,
-.social__link--facebook:hover .social__link-description--facebook,
-.social__link--git:focus .social__link-description--git,
-.social__link--gmail:focus .social__link-description--gmail,
-.social__link--skype:focus .social__link-description--skype,
-.social__link--instagram:focus .social__link-description--instagram,
-.social__link--facebook:focus .social__link-description--facebook {
-  max-width: 100px;
-  font-size: 16px;
-  left: 30px;
-  transition: all .3s;
+.social__img--linkedin {
+  left: -2px;
+}
+
+.social__img--facebook {
+  top: -9px;
 }
 
 .social__link--git:hover .social__img--github,
-.social__link--gmail:hover .social__img--gmail,
-.social__link--skype:hover .social__img--skype,
+.social__link--linkedin:hover .social__img--linkedin,
+.social__link--htmlacademy:hover .social__img--htmlacademy,
 .social__link--instagram:hover .social__img--instagram,
-.social__link--facebook:hover .social__img--facebook {
+.social__link--facebook:hover .social__img--facebook,
+.social__link--git:focus .social__img--github,
+.social__link--linkedin:focus .social__img--linkedin,
+.social__link--htmlacademy:focus .social__img--htmlacademy,
+.social__link--instagram:focus .social__img--instagram,
+.social__link--facebook:focus .social__img--facebook {
   opacity: 1;
   transition: 0.5s;
 }
 
-
-
+.social__link--git:active .social__img--github,
+.social__link--linkedin:active .social__img--linkedin,
+.social__link--htmlacademy:active .social__img--htmlacademy,
+.social__link--instagram:active .social__img--instagram,
+.social__link--facebook:active .social__img--facebook {
+  opacity: .5;
+  transition: 0.5s;
+}

@@ -1,20 +1,19 @@
 .page-header {
-
+  background-color: #000000;
 }
 
 .page-header__wrapper {
   background-image: url(../img/jpg/header111.jpg);
   background-repeat: no-repeat;
-  height: 960px;
+  height: 700px;
+  padding-top: 30px;
+  box-shadow: inset 0px -65px 270px #000000;
 }
 
 .page-header__header-top {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
 }
-
-
 
 .page-header__middle {
   display: flex;
@@ -22,7 +21,7 @@
 }
 
 .page-header__greeting-wrapper {
-  margin-top: 250px;
+  padding-top: 200px;
 }
 
 .page-header__greeting {
@@ -32,9 +31,10 @@
 
 .page-header__greeting-description {
   color: #ffffff;
-  width: 485px;
+  max-width: 487px;
   text-align: center;
   line-height: 28px;
+  margin-bottom: 25px;
 }
 
 .page-header__download-cv {
@@ -43,7 +43,8 @@
   margin-left: 150px;
 }
 
-.page-header__download-cv:hover {
+.page-header__download-cv:hover,
+.page-header__download-cv:focus {
   box-shadow: 0 0 20px #ffffff;
   transition: .3s;
 }
