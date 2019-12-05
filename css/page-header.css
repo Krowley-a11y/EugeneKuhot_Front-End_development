@@ -39,13 +39,13 @@
 
 .page-header__download-cv {
   display: flex;
-  width: 165px;
-  margin-left: 150px;
+  width: 130px;
+  margin: auto;
 }
 
 .page-header__download-cv:hover,
 .page-header__download-cv:focus {
-  box-shadow: 0 0 20px #ffffff;
+  box-shadow: 0 0 10px #ffffff;
   transition: .3s;
 }
 

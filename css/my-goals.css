@@ -9,7 +9,7 @@
 
 .my-goals__skill-table-wrapper {
   min-width: 500px;
-  padding: 50px 45px;
+  padding: 40px 45px;
   margin-right: 70px;
   background: #ffffff;
   box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
@@ -21,21 +21,22 @@
 
 .my-goals__tech-wrapper {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .my-goals__list {
   list-style: none;
-  margin-top: 35px;
+  margin: 35px 0 0 0;
   padding: 0px;
 }
 
-.my-goals__tech-name,
-.my-goals__tech-skill {
+.my-goals__tech-name {
   width: 50%;
 }
 
 .my-goals__tech-skill {
+  width: 30px;
   text-align: right;
 }
 
@@ -47,7 +48,7 @@
 }
 
 .my-goals__tech-skill-visual {
-  margin-top: 10px;
+  margin-top: 5px;
   width: 100%;
   background-color: #f7f7f7;
 }
@@ -57,7 +58,7 @@
   background-color: #9d9d9d;
 }
 
-.my-goals__item {
+.my-goals__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -75,3 +76,57 @@
   line-height: 26px;
   margin: 25px 0;
 }
+
+.my-goals__button {
+  display: flex;
+  width: 205px;
+}
+
+.my-goals__button-black {
+  display: block;
+  color: #ffffff;
+  background: #000000;
+  padding: 10px 10px 10px 15px;
+  font-weight: 600;
+}
+
+.my-goals__button-white {
+  display: block;
+  position: relative;
+  color: #000000;
+  background: #ffffff;
+  padding: 10px 10px 10px 15px;
+  font-weight: 600;
+}
+
+.my-goals__button-white::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 85px;
+  background-repeat: no-repeat;
+  background-image: url(../img/png/black-arrow.png);
+  width: 15px;
+  height: 11px;
+}
+
+.my-goals__button:hover,
+.my-goals__button:focus {
+  box-shadow: 0 0 10px #000000;
+  transition: .3s;
+}
+
+.my-goals__button:hover .my-goals__button-white::after,
+.my-goals__button:focus .my-goals__button-white::after {
+  left: 90px;
+  transition: .3s;
+}
+
+.my-goals__tech-skill {
+  width: 30px;
+  height: 30px;
+  padding: 10px 5px 0px 4px;
+  border-radius: 50%;
+  background: #f7f7f7;
+}
+
