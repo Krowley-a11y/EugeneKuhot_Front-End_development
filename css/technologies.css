@@ -7,7 +7,7 @@
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  margin: 75px 0;
+  margin: 75px 0 0 0;
 }
 
 .technologies__title-wrapper {
@@ -20,13 +20,23 @@
 }
 
 .technologies__text {
-  margin: 0 auto;
+  margin: 20px auto;
+  max-width: 420px;
+  text-align: center;
 }
 
 .technologies__item {
-  height: 225px;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
   width: 375px;
   box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  background: url(../img/png/tech-icon.png) no-repeat center 35px;
+  padding: 85px 0 0 0;
+}
+
+.technologies__item-title {
+  margin: 0 auto;
 }
 
 .technologies__item:nth-child(2) {
@@ -35,4 +45,23 @@
 
 .technologies__item:nth-child(5) {
   margin: 0 30px;
+}
+
+.technologies__description {
+  margin: 25px auto 0 auto;
+  max-width: 325px;
+  text-align: center;
+}
+
+.technologies__item:nth-child(5) {
+  background: url(../img/png/tech-icon-whitr.png) no-repeat center 35px,
+              #000000;
+}
+
+.technologies__item:nth-child(5) .technologies__item-title {
+  color: #ffffff;
+}
+
+.technologies__item:nth-child(5) {
+  color: #dcdcdc;
 }
