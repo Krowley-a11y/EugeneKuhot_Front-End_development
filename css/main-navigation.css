@@ -1,8 +1,13 @@
+.main-navigation {
+  padding-top: 20px;
+}
+
 .main-navigation__list {
   display: flex;
   color: #ffffff;
   list-style: none;
   padding: 0px;
+  margin: 0;
 }
 
 .main-navigation__description {

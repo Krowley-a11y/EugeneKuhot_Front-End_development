@@ -9,7 +9,7 @@
 
 .skills__item {
   width: 33%;
-  padding: 45px 20px;
+  padding: 30px 20px;
   text-align: center;
   box-shadow: -1px 1px 5px rgba(0,0,0,0.5);
 
@@ -17,4 +17,10 @@
 
 .skill__title {
   margin-top: 0px;
+}
+
+.skills__item:hover .skills__description {
+  transform: scale(1.1, 1.1);
+  transition: 0.4s;
+  cursor: pointer;
 }

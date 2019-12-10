@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="css/my-goals.css">
   <link rel="stylesheet" href="css/technologies.css">
   <link rel="stylesheet" href="css/portfolio.css">
+  <link rel="stylesheet" href="css/experience.css">
+  <link rel="stylesheet" href="css/contact.css">
 
   <link rel="icon" type="image/png" href="img/png/favicon.png" />
 	<title>Eugene Kuhot. Front-end development</title>
@@ -67,7 +69,7 @@
       </symbol>
     </svg>
   </div>
-  <header class="page-header">
+  <header class="page-header" id="header">
     <div class="page-header__wrapper container">
       <div class="page-header__header-top">
 
@@ -88,17 +90,12 @@
               </a>
             </li>
             <li class="main-navigation__item">
-              <a href="#" class="main-navigation__link">
+              <a href="#experience" class="main-navigation__link">
                 <span class="main-navigation__description">Experience</span>
               </a>
             </li>
             <li class="main-navigation__item">
-              <a href="#" class="main-navigation__link">
-                <span class="main-navigation__description">Education</span>
-              </a>
-            </li>
-            <li class="main-navigation__item">
-              <a href="#" class="main-navigation__link">
+              <a href="#contact" class="main-navigation__link">
                 <span class="main-navigation__description">Contact</span>
               </a>
             </li>
@@ -170,6 +167,8 @@
           </ul>
         </div>
       </div>
+
+      <a href="#header" class="to-top-button"></a>
     </div>
   </header>
 
@@ -180,22 +179,22 @@
       <section id="skills" class="skills container">
         <ul class="skills__list">
           <li class="skills__item">
-            <h3 class="skill__title">На первом этапе обучения</h3>
-            <span class="skills__description">
-              Я овладел навыками создания выразительной и доступной разметки, работы с графическим макетом, создания сетки страниц, оформления декоративных элементов и текстового содержания, оптимизации кода и подготовки завершённого проекта к публикации.
-            </span>
+            <h3 class="skill__title">Certificate HTML/CSS level 1</h3>
+            <div class="skills__description">
+              <img src="img/jpg/Certificate1.jpg" width="200">
+            </div>
           </li>
           <li class="skills__item">
-            <h3 class="skill__title">Затем я в полной мере освоил</h3>
-            <span class="skills__description">
-              Создание разметки по методологии БЭМ, использование препроцессоров, создание адаптивных сеток, работу с адаптивной и ретиновой графикой, использование инструментов автоматизации и настройку сборки проекта для публикации.
-            </span>
+            <h3 class="skill__title">Certificate HTML/CSS level 2</h3>
+            <div class="skills__description">
+              <img src="img/jpg/Certificate2.jpg" width="200">
+            </div>
           </li>
           <li class="skills__item">
-            <h3 class="skill__title">А перед завершением курса</h3>
-            <span class="skills__description">
-              Я изучил основы JavaScript, научился алгоритмическому мышлению, методам оживления статичных страниц, валидации данных в формах, взаимодействию с сервером и получил практику решения типовых задач.
-            </span>
+            <h3 class="skill__title">Certificate JavaScript level 1</h3>
+            <div class="skills__description">
+              <img src="img/jpg/Certificate3.jpg" width="200">
+            </div>
           </li>
         </ul>
       </section>
@@ -286,37 +285,37 @@
         </div>
         <ul class="technologies__list">
           <li class="technologies__item">
-            <h4 class="technologies__item-title">Photography</h4>
+            <h4 class="technologies__item-title">BEM mehtodology, Semantic-ui</h4>
             <p class="technologies__description">
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint.
             </p>
           </li>
           <li class="technologies__item">
-            <h4 class="technologies__item-title">Branding</h4>
+            <h4 class="technologies__item-title">LESS/SASS</h4>
             <p class="technologies__description">
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint.
             </p>
           </li>
           <li class="technologies__item">
-            <h4 class="technologies__item-title">Logo design</h4>
+            <h4 class="technologies__item-title">Responsive & adaptive layouts</h4>
             <p class="technologies__description">
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint.
             </p>
           </li>
           <li class="technologies__item">
-            <h4 class="technologies__item-title">Photography</h4>
+            <h4 class="technologies__item-title">PixelPerfect, Adobe(PS, AI), Avocode</h4>
             <p class="technologies__description">
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint.
             </p>
           </li>
           <li class="technologies__item">
-            <h4 class="technologies__item-title">Web design</h4>
+            <h4 class="technologies__item-title">Git, Gulp, NPM</h4>
             <p class="technologies__description">
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint.
             </p>
           </li>
           <li class="technologies__item">
-            <h4 class="technologies__item-title">Web developvent</h4>
+            <h4 class="technologies__item-title">Cross-browser layout</h4>
             <p class="technologies__description">
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint.
             </p>
@@ -334,21 +333,87 @@
 
         <ul class="portfolio__list">
           <li class="portfolio__item">
-            <a class="portfolio__link"></a>
+            <a class="portfolio__link" href="https://jesus-akbar.github.io/Device/" target="_blank"></a>
           </li>
           <li class="portfolio__item">
-            <a class="portfolio__link"></a>
+            <a class="portfolio__link" target="_blank"></a>
           </li>
           <li class="portfolio__item">
-            <a class="portfolio__link"></a>
+            <a class="portfolio__link" target="_blank"></a>
           </li>
           <li class="portfolio__item">
-            <a class="portfolio__link"></a>
+            <a class="portfolio__link" target="_blank"></a>
           </li>
           <li class="portfolio__item">
-            <a class="portfolio__link"></a>
+            <a class="portfolio__link" target="_blank"></a>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="experience__wrapper container">
+
+        <ul class="experience__list">
+          <li class="experience__item">
+            <p>COMBIWAY POLAND sp. z o. o., Halicka 9</p>
+            <span>Web Content Editor</span>
+            <ul class="experience__authority">
+              <li>Translating from Russian to Polish pages and articles on combiway.com</li>
+              <li>Overseeing layout (images, graphics, videos and artwork)</li>
+              <li>Producing and publishing new content in a creative way</li>
+            </ul>
+          </li>
+          <li class="experience__item">
+            <p>Помощник фронтенд разработчика</p>
+            <ul class="experience__authority">
+              <li>Помощь в выполнении проектов коммерческого уровня</li>
+              <li>Выполнение работы в команде с менеджером и тестировщиком</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__wrapper container">
+
+        <div class="contact__description-wrapper">
+
+          <h3 class="contact__title">Contact Info:</h3>
+          <p class="contact__description">Свяжитесь со мной любым удобным для Вас способом.</p>
+
+          <ul class="contact-list">
+            <li class="contact__item">
+              Email: kz.greenlinefamily@gmail.com
+            </li>
+            <li class="contact__item">
+              Телефон: +48 575 932 071
+            </li>
+            <li class="contact__item">
+              Telegram: @jesus_akbar
+            </li>
+            <li class="contact__item">
+              City: Cracow
+            </li>
+          </ul>
+
+        </div>
+
+        <form class="contact-form">
+          <input class="contact-form__name" type="text" placeholder="Your Name">
+          <input class="contact-form__mail" type="email" placeholder="Your Email" required>
+
+          <input class="contact-form__theme" type="text" placeholder="Theme">
+
+          <textarea class="contact-form__mail-text">
+
+          </textarea>
+
+          <input class="contact-form__submit" type="submit" value="SEND MESSAGE">
+
+        </form>
+
       </div>
     </section>
   </main>

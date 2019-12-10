@@ -1,6 +1,5 @@
 .page-main__linear-wrapper {
-  height: 257px;
   padding: 145px 0px;
-  background: linear-gradient(12deg, #ffffff 50%, #000000 50%);
+  background: linear-gradient(0deg, #ffffff 50%, #000000 50%);
 }
 
