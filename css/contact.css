@@ -86,6 +86,7 @@
 .contact-form__submit {
   height: 55px;
   cursor: pointer;
+  padding: 20px;
 }
 
 .contact-form__mail-text {

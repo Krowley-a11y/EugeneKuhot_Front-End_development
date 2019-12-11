@@ -1,13 +1,64 @@
 .experience {
   padding: 65px 0 115px 0;
-  /*background: linear-gradient(to top, #000000 40%, #ffffff 40%);*/
+/*  background: linear-gradient(to top, #000000 50%, #ffffff 50%);*/
+}
+
+.experience__wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .experience__title {
+  width: 100%;
   text-align: center;
   margin-bottom: 45px;
 }
 
-.experience__table-wrapper {
+.experience__list,
+.experiene__dates,
+.experience__authority {
+  padding: 0;
+  list-style: none;
+}
+
+.experience__authority li {
+  margin-bottom: 8px;
+}
+
+.experiene__dates {
+  width: 25%;
+  font-size: 15px;
+  padding-top: 5px;
+}
+
+.experiene__dates li {
+  text-align: center;
+}
+
+.experience__authority {
+  padding: 15px 35px;
+}
+
+.experience__place {
   display: flex;
+  margin: 0;
+  font-size: 20px;
+}
+
+.experience__company {
+  display: inline-block;
+  padding: 15px 20px 0;
+}
+
+/*.experience__place::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: url(../img/star.jpg);
+}*/
+
+.experience__star {
+  width: 25px;
+  height: 25px;
 }

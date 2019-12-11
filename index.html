@@ -63,8 +63,19 @@
       </symbol>
 
       <symbol id="facebook" width="30" height="30" viewBox="0 0 512.000000 512.000000">
-        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#ffffff"stroke="none">
+        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#ffffff" stroke="none">
           <path d="M2890 4140 c-276 -27 -477 -172 -567 -408 -43 -115 -52 -195 -53 -474 l0 -258 -240 0 -240 0 0 -285 0 -285 240 0 240 0 0 -715 0 -715 290 0 290 0 0 715 0 715 240 0 240 0 4 23 c7 28 66 509 66 531 0 14 -29 16 -276 16 l-276 0 4 223 c5 248 12 282 74 336 50 45 91 53 302 58 l192 5 0 253 0 253 -112 6 c-229 11 -345 13 -418 6z"/>
+        </g>
+      </symbol>
+
+      <symbol id="star-icon" width="20" height="20" viewBox="0 0 469.000000 468.000000">
+        <g transform="translate(0.000000,468.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+          <path d="M2041 4483 c-139 -17 -342 -68 -476 -118 -517 -193 -953 -589 -1191 -1080 -34 -71 -65 -140 -69 -152 l-6 -23 219 0 220 0 48 87 c169 301 438 556 752 713 123 61 310 125 435 149 l92 17 67 210 c37 115 68 210 68 212 0 4 -42 0 -159 -15z"/>
+          <path d="M2440 4498 c0 -10 130 -412 135 -416 3 -3 47 -14 98 -25 492 -98 924 -414 1182 -864 l47 -83 219 0 c120 0 219 2 219 5 0 2 -18 46 -41 97 -198 450 -559 829 -1004 1055 -153 77 -285 126 -455 169 -126 31 -400 74 -400 62z"/>
+          <path d="M2263 4318 c-28 -90 -134 -424 -236 -743 l-184 -580 -786 3 c-433 1 -787 0 -787 -2 0 -3 284 -208 631 -457 347 -249 633 -457 635 -464 3 -6 -106 -343 -240 -750 -135 -407 -244 -740 -243 -741 1 -1 175 126 387 282 365 269 582 430 784 578 49 36 92 66 95 66 3 0 289 -209 636 -464 346 -256 631 -464 632 -463 1 1 -108 333 -243 737 -134 404 -245 740 -246 746 -3 13 60 59 787 578 253 181 467 335 475 343 13 11 -104 13 -771 7 -478 -5 -788 -4 -792 2 -5 9 -374 1165 -441 1381 -17 57 -34 103 -37 103 -3 0 -28 -73 -56 -162z"/>
+          <path d="M206 2813 c-60 -268 -69 -517 -31 -792 52 -367 204 -721 443 -1031 72 -92 306 -330 325 -330 7 1 42 94 79 207 l67 206 -65 69 c-249 265 -406 611 -455 1002 -11 94 -7 358 7 446 6 35 4 37 -78 95 -45 33 -125 90 -175 127 -51 38 -95 68 -97 68 -2 0 -11 -30 -20 -67z"/>
+          <path d="M4232 2753 l-173 -125 8 -87 c12 -126 8 -384 -6 -471 -61 -366 -217 -684 -464 -947 l-49 -52 68 -205 c38 -114 72 -206 76 -206 18 0 183 160 268 260 277 326 441 688 505 1115 22 144 22 440 1 590 -18 122 -47 255 -55 254 -3 0 -84 -57 -179 -126z"/>
+          <path d="M1326 639 l-177 -131 58 -36 c166 -101 407 -199 608 -248 314 -76 677 -77 1000 -2 191 44 454 151 618 250 l58 36 -168 122 c-92 68 -173 127 -179 132 -7 5 -45 -8 -96 -32 -457 -214 -1047 -208 -1486 14 -28 14 -53 26 -55 26 -2 0 -83 -59 -181 -131z"/>
         </g>
       </symbol>
     </svg>
@@ -129,7 +140,6 @@
                 <svg class="social__img social__img--github">
                   <use xlink:href="#github"></use>
                 </svg>
-
               </a>
             </li>
 
@@ -268,7 +278,7 @@
             Я хочу быть частью команды опытных разработчиков, которые будучи моими менторами смогли бы передать свой опыт, а я, в свою очередь, мог приносить пользу компании.
           </p>
 
-          <a href="#" class="my-goals__button">
+          <a href="#contact" class="my-goals__button">
             <span class="my-goals__button-black">Свяжись</span>
             <span class="my-goals__button-white">со мной</span>
           </a>
@@ -353,19 +363,35 @@
 
     <section class="experience" id="experience">
       <div class="experience__wrapper container">
+        <h1 class="experience__title">My Experience</h1>
+
+        <ul class="experiene__dates">
+          <li>2017-08 - 2018-08</li>
+          <li>2019-09 - present</li>
+        </ul>
 
         <ul class="experience__list">
           <li class="experience__item">
-            <p>COMBIWAY POLAND sp. z o. o., Halicka 9</p>
-            <span>Web Content Editor</span>
+            <p class="experience__place">
+              <svg class="experience__star">
+                <use xlink:href="#star-icon"></use>
+              </svg>
+              Web Content Editor
+            </p>
+            <span class="experience__company">COMBIWAY POLAND sp. z o. o., Halicka 9</span>
             <ul class="experience__authority">
-              <li>Translating from Russian to Polish pages and articles on combiway.com</li>
+              <li>Translating from Russian to Polish pages and articles on <a class="experience__combiway" href="https://combiway.com/" target="_blank">combiway.pl</a></li>
               <li>Overseeing layout (images, graphics, videos and artwork)</li>
               <li>Producing and publishing new content in a creative way</li>
             </ul>
           </li>
           <li class="experience__item">
-            <p>Помощник фронтенд разработчика</p>
+            <p class="experience__place">
+              <svg class="experience__star">
+                <use xlink:href="#star-icon"></use>
+              </svg>
+              Помощник фронтенд разработчика
+            </p>
             <ul class="experience__authority">
               <li>Помощь в выполнении проектов коммерческого уровня</li>
               <li>Выполнение работы в команде с менеджером и тестировщиком</li>
