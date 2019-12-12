@@ -1,17 +1,19 @@
 .experience {
-  padding: 65px 0 115px 0;
-/*  background: linear-gradient(to top, #000000 50%, #ffffff 50%);*/
+  background: linear-gradient(to right, #ffffff 50%, #000000 50%);
 }
 
 .experience__wrapper {
   display: flex;
   flex-wrap: wrap;
+  padding: 65px 0 115px 0;
+  background: linear-gradient(to right, #ffffff 33%, #000000 33%);
 }
 
 .experience__title {
   width: 100%;
   text-align: center;
   margin-bottom: 45px;
+  color: #ffffff;
 }
 
 .experience__list,
@@ -23,12 +25,13 @@
 
 .experience__authority li {
   margin-bottom: 8px;
+  color: #dcdcdc;
 }
 
 .experiene__dates {
   width: 25%;
   font-size: 15px;
-  padding-top: 5px;
+  padding: 5px 0 0 70px;
 }
 
 .experiene__dates li {
@@ -43,22 +46,15 @@
   display: flex;
   margin: 0;
   font-size: 20px;
+  color: #ffffff;
 }
-
-.experience__company {
-  display: inline-block;
-  padding: 15px 20px 0;
-}
-
-/*.experience__place::before {
-  content: "";
-  display: block;
-  width: 22px;
-  height: 22px;
-  background: url(../img/star.jpg);
-}*/
 
 .experience__star {
   width: 25px;
   height: 25px;
+  margin-right: 15px;
+}
+
+.experiene__date-frontend {
+  margin-top: 115px;
 }

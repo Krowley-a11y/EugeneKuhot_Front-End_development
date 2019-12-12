@@ -1,10 +1,11 @@
 .my-goals__wrapper {
-  background: linear-gradient(to right, #000000 38%, #ffffff 38%);
+  background: linear-gradient(to right, #000000 40%, #ffffff 40%);
 }
 
 .my-goals {
   display: flex;
   padding: 100px 0;
+  background: linear-gradient(to right, #000000 38%, #ffffff 38%);
 }
 
 .my-goals__skill-table-wrapper {
@@ -54,8 +55,27 @@
 }
 
 .my-goals__tech-skill-visual-already {
-  width: 80%;
   background-color: #9d9d9d;
+}
+
+.my-goals__tech-skill-visual-already--html {
+  width: 99%;
+}
+
+.my-goals__tech-skill-visual-already--css {
+  width: 95%;
+}
+
+.my-goals__tech-skill-visual-already--js {
+  width: 65%;
+}
+
+.my-goals__tech-skill-visual-already--ajax {
+  width: 95%;
+}
+
+.my-goals__tech-skill-visual-already--pp {
+  width: 99%;
 }
 
 .my-goals__item:not(:last-child) {
