@@ -1,19 +1,21 @@
 .experience {
-  background: linear-gradient(to right, #ffffff 50%, #000000 50%);
+  background: #ffffff;
+  color: #000000;
 }
 
 .experience__wrapper {
   display: flex;
   flex-wrap: wrap;
   padding: 65px 0 115px 0;
-  background: linear-gradient(to right, #ffffff 33%, #000000 33%);
+/*  background: -webkit-linear-gradient(left, #000000 40%, #ffffff 40%);
+  background: -o-linear-gradient(left, #000000 40%, #ffffff 40%);
+  background: linear-gradient(to right, #000000 40%, #ffffff 40%);*/
 }
 
 .experience__title {
   width: 100%;
   text-align: center;
-  margin-bottom: 45px;
-  color: #ffffff;
+  margin-bottom: 70px;
 }
 
 .experience__list,
@@ -23,15 +25,35 @@
   list-style: none;
 }
 
+.experience__desc-wrapper {
+  display: flex;
+  width: 44%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.experience__list {
+  display: flex;
+  width: 38%;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding-bottom: 54px;
+}
+
 .experience__authority li {
   margin-bottom: 8px;
-  color: #dcdcdc;
+  color: #000000;
 }
 
 .experiene__dates {
-  width: 25%;
-  font-size: 15px;
-  padding: 5px 0 0 70px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 15%;
+  margin: 0 3% 0 0;
+  padding: 3px 0 58px 0;
 }
 
 .experiene__dates li {
@@ -39,20 +61,24 @@
 }
 
 .experience__authority {
-  padding: 15px 35px;
+  margin: 0;
+  font-size: 18px;
+}
+
+.experience__authority:first-child {
+  margin-bottom: 50px;
 }
 
 .experience__place {
   display: flex;
   margin: 0;
-  font-size: 20px;
-  color: #ffffff;
+  font-size: 22px;
 }
 
 .experience__star {
   width: 25px;
   height: 25px;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .experiene__date-frontend {

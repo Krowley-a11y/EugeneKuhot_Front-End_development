@@ -64,9 +64,18 @@
 }
 
 .contact-form__submit {
+  opacity: .8;
+  height: 55px;
+  cursor: pointer;
+  padding: 18px;
   background: #000000;
   border: none;
   color: #ffffff;
+}
+
+.contact-form__submit:hover {
+  opacity: 1;
+  transition: .3s;
 }
 
 .contact-form__name,
@@ -81,12 +90,6 @@
 .contact-form__theme,
 .contact-form__mail-text {
   width: 100%;
-}
-
-.contact-form__submit {
-  height: 55px;
-  cursor: pointer;
-  padding: 20px;
 }
 
 .contact-form__mail-text {

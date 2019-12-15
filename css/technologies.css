@@ -53,15 +53,10 @@
   text-align: center;
 }
 
-.technologies__item:nth-child(5) {
+.technologies__item:hover {
   background: url(../img/png/tech-icon-whitr.png) no-repeat center 35px,
               #000000;
-}
-
-.technologies__item:nth-child(5) .technologies__item-title {
   color: #ffffff;
+  transition: .3s;
 }
 
-.technologies__item:nth-child(5) {
-  color: #dcdcdc;
-}

@@ -1,26 +1,24 @@
+'use strict';
+
 (function () {
+  var goTopBtn = document.querySelector('.backToTop');
 
-  var scrollBtn = document.getElementById('scrollTop');
+  function trackScroll () {
+    var scrolled = window.pageYOffset;
+    var coords = document.documentElement.clientHeight;
 
-  window.onscroll = function () {
-
-    if (document.body.scrollTop > document.documentElement.clientHeight) {
-      scrollBtn.style.opacity = "1";
-    } else {
-      scrollBtn.style.opacity = "0";
+    if (scrolled > coords) {
+      goTopBtn.classList.add('backToTop-show');
     }
-  };
-
-  var timeOut;
-
-  var goUp = function () {
-    var top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
-    if (top > 0) {
-      window.scrollBy(0, -5000);
-      timeout = setTimeout('goUp()', 20)
-    } else clearTimeout(timeOut);
+    if (scrolled < coords) {
+      goTopBtn.classList.remove('backToTop-show');
+    }
   }
 
-  scrollBtn.addEventListener('click', goUp);
+  function backToTop () {
+    window.scrollTo(0, 0);
+  }
 
+  window.addEventListener('scroll', trackScroll);
+  goTopBtn.addEventListener('click', backToTop);
 })();

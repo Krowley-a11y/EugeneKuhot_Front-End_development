@@ -178,7 +178,14 @@
         </div>
       </div>
 
-      <div id="scrollTop"></div>
+      <div class="backToTop">
+        <div class="backToTop-wrapper">
+          <span>Back</span>
+          <span>to</span>
+          <span>TOP</span>
+        </div>
+
+      </div>
     </div>
   </header>
 
@@ -190,20 +197,20 @@
         <ul class="skills__list">
           <li class="skills__item">
             <h3 class="skill__title">Certificate HTML/CSS level 1</h3>
-            <div class="skills__description">
-              <img src="img/jpg/Certificate1.jpg" width="200">
+            <div class="skills__description" tabindex="0">
+              <img class="skills__certificate1" src="img/jpg/Certificate1.jpg" width="200">
             </div>
           </li>
           <li class="skills__item">
             <h3 class="skill__title">Certificate HTML/CSS level 2</h3>
-            <div class="skills__description">
-              <img src="img/jpg/Certificate2.jpg" width="200">
+            <div class="skills__description" tabindex="0">
+              <img class="skills__certificate2" src="img/jpg/Certificate2.jpg" width="200">
             </div>
           </li>
           <li class="skills__item">
             <h3 class="skill__title">Certificate JavaScript level 1</h3>
-            <div class="skills__description">
-              <img src="img/jpg/Certificate3.jpg" width="200">
+            <div class="skills__description" tabindex="0">
+              <img class="skills__certificate3" src="img/jpg/Certificate3.jpg" width="200">
             </div>
           </li>
         </ul>
@@ -376,13 +383,8 @@
               <svg class="experience__star">
                 <use xlink:href="#star-icon"></use>
               </svg>
-              Web Content Editor in COMBIWAY POLAND sp. z o. o.
+              Web Content Editor<br>COMBIWAY POLAND sp. z o. o.
             </p>
-            <ul class="experience__authority">
-              <li>Translating from Russian to Polish pages and articles on <a class="experience__combiway" href="https://combiway.com/" target="_blank">combiway.pl</a></li>
-              <li>Overseeing layout (images, graphics, videos and artwork)</li>
-              <li>Producing and publishing new content in a creative way</li>
-            </ul>
           </li>
           <li class="experience__item">
             <p class="experience__place">
@@ -391,12 +393,19 @@
               </svg>
               Помощник фронтенд разработчика
             </p>
-            <ul class="experience__authority">
-              <li>Помощь в выполнении проектов коммерческого уровня</li>
-              <li>Выполнение работы в команде с менеджером и тестировщиком</li>
-            </ul>
           </li>
         </ul>
+        <div class="experience__desc-wrapper">
+          <ul class="experience__authority">
+            <li>Translating from Russian to Polish pages and articles on <a class="experience__combiway" href="https://combiway.com/" target="_blank">combiway.pl</a></li>
+            <li>Overseeing layout (images, graphics, videos and artwork)</li>
+            <li>Producing and publishing new content in a creative way</li>
+          </ul>
+          <ul class="experience__authority">
+            <li>Помощь в выполнении проектов коммерческого уровня</li>
+            <li>Выполнение работы в команде с менеджером и тестировщиком</li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
@@ -442,6 +451,15 @@
       </div>
     </section>
   </footer>
+  <div class="certificate-overlay hidden">
+    <img src="img/jpg/Certificate1.jpg" width="450" class="certificate1 hidden">
+
+    <img src="img/jpg/Certificate2.jpg" width="450" class="certificate2 hidden">
+
+    <img src="img/jpg/Certificate3.jpg" width="450" class="certificate3 hidden">
+  </div>
   <script src="js/goup.js"></script>
+  <script src="js/certificate.js"></script>
+
 </body>
 </html>
