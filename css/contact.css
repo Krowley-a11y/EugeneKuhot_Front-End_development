@@ -96,3 +96,7 @@
   height: 170px;
   resize: none;
 }
+
+.contact__link {
+  color: #ffffff;
+}
