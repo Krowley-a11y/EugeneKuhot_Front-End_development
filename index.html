@@ -436,13 +436,13 @@
 
         </div>
 
-        <form class="contact-form">
-          <input class="contact-form__name" type="text" placeholder="Your Name">
-          <input class="contact-form__mail" type="email" placeholder="Your Email" required>
+        <form action="php/mail.php" method="POST" class="contact-form">
+          <input name="user-name" class="contact-form__name" type="text" placeholder="Your Name">
+          <input name="user-mail" class="contact-form__mail" type="email" placeholder="Your Email" required>
 
-          <input class="contact-form__theme" type="text" placeholder="Theme">
+          <input name="mail-theme" class="contact-form__theme" type="text" placeholder="Theme">
 
-          <textarea class="contact-form__mail-text"></textarea>
+          <textarea name="letter" class="contact-form__mail-text"></textarea>
 
           <input class="contact-form__submit" type="submit" value="SEND MESSAGE">
 

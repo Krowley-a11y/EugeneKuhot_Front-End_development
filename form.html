@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+<head>
+	<meta charset="UTF-8">
+	<title>Регистрация</title>
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="style/slick.css">
+	<link rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="scss/_form.css">
+</head>
+
+<body class="load">
+	<header class="header">
+		<div class="header-info-bar">
+			<div class="section-frame">
+				<div class="header-info-box">
+					<div class="header-back-contact">
+						<a href="tel:+48577533272" class="back-contact__tel"><i class="fa-phone"></i> +48 577 533 272</a>
+						<a href="#"><i class="fa-viber"></i></a>
+						<a href="#"><i class="fa-whatsapp"></i></a>
+					</div>
+					<a href="#" class="header-consultation">Бесплатная консультация</a>
+					<form action="#" class="header-search">
+						<input type="text" name="" required>
+						<label>
+							<i class="fa-search"></i>
+							<input type="submit" name="">	
+						</label>
+					</form>
+					<div class="header-language">
+						<a href="#">русский</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section-frame">
+			<div class="header-nav-bar">
+				<a href="index.html" class="logo">
+					<img src="images/logo.png" alt="logo">
+				</a>
+				<nav class="main-nav">
+					<ul>
+						<li><a href="catalog.html">Университеты</a></li>
+						<li><a href="#">Специальности</a></li>
+						<li><a href="#">Партнерская программа</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<a href="#" class="header-area">Личный кабинет</a>
+			</div>
+		</div>
+	</header>
+
+
+	<main class="page-main">
+		<div class="section-frame">
+			<div class="page-main__wrapper">
+				<h1 class="page-main__registration">Регистрация</h1>
+				
+				<form action="#" method="post" class="form form__first-page-wrapper">	
+
+					<div class="form__e-mail-wrap">
+	              		<label for="client-mail" class="form__e-mail-description">Ваш e-mail:</label>
+	              		<input type="email" id="client-mail" class="form__e-mail-field" required>
+	            	</div>
+
+		            <div class="form__password-wrap">
+		              <label for="client-password" class="form__password-description">Ваш пароль:</label>
+		              <input type="password" id="client-password" class="form__password-field" required>
+		            </div>
+
+	            	<div class="form__data-processing">
+	                	<input type="checkbox" id="data-processing-check" class="form__data-processing-checkbox" required checked>
+	                	<label for="data-processing-check" class="form__data-processing-description">Соглашаюсь на обработку персональных данных</label>
+	            	</div>
+				
+					<input type="submit" class="form__button-registration button" value="Регистрация">
+
+					<div class="form__registration-error-description visually-hidden">
+						<p><span class="form__mistake">Ошибка!</span> Аккаунт с таким адресом эмейл уже существует. Если это Ваш эмейл, воспользуйтесь формой <a href="#" class="form__password-recovery-form">восстановления пароля.</a></p>
+					</div>
+				
+					<div class="form__ready-account-wrapper">
+						<p class="form__is-already-account">Уже есть аккаунт?
+							<a href="#" class="form__ready-account-login">Войти.</a>
+						</p>
+					</div>						
+										
+				</form>
+				
+				<form action="#" method="post" class="form form__second-page-wrapper visually-hidden">
+
+					<p class="form__registration-thank">Спасибо за регистрацию!</p>
+					<p class="form__key-description">Мы отправили на указанный эмейл Ключ из 6 цифр, пожалуйста введите его в поле ниже</p>
+
+					<div class="form__key-wrapper">
+						<label for="registration-key" class="form__key-name">Ключ:</label>
+						<input type="text" id="registration-key" class="form__registration-key-field">
+					</div>
+
+					<input type="submit" class="form__button-continue button" value="продолжить">
+
+				</form>		
+			</div>
+		</div>
+	</main>
+
+
+	<footer class="footer">
+		<div class="section-frame">
+			<div class="footer-info">
+				<a href="#" class="footer-logo">
+					<img src="images/logo.png" alt="Logo">
+				</a>
+				<div class="footer-link-list">
+					<ul>
+						<li><i class="fa-maps"></i>Rekrut Sp. z O.O.</li>
+						<li><a href="#"><i class="fa-maps"></i>30-006 Kraków, ul. Wrocławska 8</a></li>
+						<li><a href="tel:+48577533272"><i class="fa-phone"></i>+48 577 533 272</a></li>
+						<li><a href="tel:+48791333658"><i class="fa-phone"></i>+48 791 333 658</a></li>
+						<li><a href="mailto:info@rekrut.com.ua"><i class="fa-mail"></i>info@rekrut.com.ua</a></li>
+					</ul>
+					<div class="footer-link-social">
+						<a href="#"><i class="fa-vk"></i></a>
+						<a href="#"><i class="fa-facebook"></i></a>
+						<a href="#"><i class="fa-instagram"></i></a>
+					</div>
+				</div>
+				<div class="footer-link-list">
+					<ul>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Каталог университетов</a></li>
+						<li><a href="#">Каталог специальностей</a></li>
+						<li><a href="#">Партнерская программа</a></li>
+						<li><a href="#">Контакт</a></li>
+					</ul>
+				</div>
+				<div class="footer-btn">
+					<a href="#" class="footer-login">Вход/регистрация</a>
+					<a href="#" class="footer-reg">бесплатная консультация</a>
+					<div class="footer-language">
+						<p>Язык сайта:</p>
+						<a href="#"><img src="images/icon/uk.png" alt="uk"></a>
+						<a href="#"><img src="images/icon/rus.png" alt="rus"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copy">
+			<h3>REKRUT.COM.UA - Международный вступительный онлайн-сервис для жителей Украины и стран СНГ.</h3>
+		</div>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/slick/slick.min.js" ></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
