@@ -1,0 +1,152 @@
+.my-goals__wrapper {
+  background: linear-gradient(to right, #000000 40%, #ffffff 40%);
+}
+
+.my-goals {
+  display: flex;
+  padding: 100px 0;
+  background: linear-gradient(to right, #000000 38%, #ffffff 38%);
+}
+
+.my-goals__skill-table-wrapper {
+  min-width: 500px;
+  padding: 40px 45px 65px;
+  margin-right: 70px;
+  background: #ffffff;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.my-goals__skills-title {
+  margin: 0px;
+}
+
+.my-goals__tech-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.my-goals__list {
+  list-style: none;
+  margin: 35px 0 0 0;
+  padding: 0px;
+}
+
+.my-goals__tech-name {
+  width: 50%;
+}
+
+.my-goals__tech-skill {
+  width: 30px;
+  text-align: right;
+}
+
+.my-goals__tech-skill-visual,
+.my-goals__tech-skill-visual-already {
+  display: block;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.my-goals__tech-skill-visual {
+  margin-top: 5px;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.my-goals__tech-skill-visual-already {
+  background-color: #9d9d9d;
+}
+
+.my-goals__tech-skill-visual-already--html {
+  width: 99%;
+}
+
+.my-goals__tech-skill-visual-already--css {
+  width: 95%;
+}
+
+.my-goals__tech-skill-visual-already--js {
+  width: 65%;
+}
+
+.my-goals__tech-skill-visual-already--ajax {
+  width: 95%;
+}
+
+.my-goals__tech-skill-visual-already--pp {
+  width: 99%;
+}
+
+.my-goals__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.my-goals__description-block {
+  width: 590px;
+  padding: 70px 0;
+}
+
+.my-goals__desc-title {
+  margin: 0px;
+}
+
+.my-goals__description {
+  font-size: 16px;
+  line-height: 26px;
+  margin: 25px 0;
+}
+
+.my-goals__button {
+  display: flex;
+  width: 205px;
+}
+
+.my-goals__button-black {
+  display: block;
+  color: #ffffff;
+  background: #000000;
+  padding: 10px 10px 10px 15px;
+  font-weight: 600;
+}
+
+.my-goals__button-white {
+  display: block;
+  position: relative;
+  color: #000000;
+  background: #ffffff;
+  padding: 10px 10px 10px 15px;
+  font-weight: 600;
+}
+
+.my-goals__button-white::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 85px;
+  background-repeat: no-repeat;
+  background-image: url(../img/png/black-arrow.png);
+  width: 15px;
+  height: 11px;
+}
+
+.my-goals__button:hover,
+.my-goals__button:focus {
+  box-shadow: 0 0 10px #000000;
+  transition: .3s;
+}
+
+.my-goals__button:hover .my-goals__button-white::after,
+.my-goals__button:focus .my-goals__button-white::after {
+  left: 90px;
+  transition: .3s;
+}
+
+.my-goals__tech-skill {
+  width: 30px;
+  height: 30px;
+  padding: 10px 5px 0px 4px;
+  border-radius: 50%;
+  background: #f7f7f7;
+}
+
