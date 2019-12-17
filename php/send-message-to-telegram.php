@@ -1,7 +1,6 @@
 <?php
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-if (!empty($_POST['name']) && !empty($_POST['mail'])){
+if (!empty($_POST['name']) && !empty($_POST['phone'])){
   if (isset($_POST['name'])) {
     if (!empty($_POST['name'])){
   $name = strip_tags($_POST['name']);
@@ -9,10 +8,10 @@ if (!empty($_POST['name']) && !empty($_POST['mail'])){
   }
 }
 
-if (isset($_POST['mail'])) {
-  if (!empty($_POST['mail'])){
-  $mail = strip_tags($_POST['mail']);
-  $phoneFieldset = "Phone: ";
+if (isset($_POST['phone'])) {
+  if (!empty($_POST['phone'])){
+  $phone = strip_tags($_POST['phone']);
+  $phoneFieldset = "Телефон: ";
   }
 }
 if (isset($_POST['theme'])) {
