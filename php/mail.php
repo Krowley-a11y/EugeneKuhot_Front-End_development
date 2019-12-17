@@ -1,40 +1,49 @@
-<?php 
+<?php
 
-require_once('phpmailer/PHPMailerAutoload.php');
-$mail = new PHPMailer;
-$mail->CharSet = 'utf-8';
-
-$name = $_POST['user_name'];
-$phone = $_POST['user_phone'];
-$email = $_POST['user_email'];
-
-//$mail->SMTPDebug = 3;                               // Enable verbose debug output
-
-$mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
-$mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'dzharuzov@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = '$dk820&123'; // Ваш пароль от почты с которой будут отправляться письма
-$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
-
-$mail->setFrom('dzharuzov@mail.ru'); // от кого будет уходить письмо?
-$mail->addAddress('gomudusu@p33.org');     // Кому будет уходить письмо 
-//$mail->addAddress('ellen@example.com');               // Name is optional
-//$mail->addReplyTo('info@example.com', 'Information');
-//$mail->addCC('cc@example.com');
-//$mail->addBCC('bcc@example.com');
-//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-$mail->isHTML(true);                                  // Set email format to HTML
-
-$mail->Subject = 'Заявка с тестового сайта';
-$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email;
-$mail->AltBody = '';
-
-if(!$mail->send()) {
-    echo 'Error';
-} else {
-    header('location: thank-you.html');
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if (!empty($_POST['name']) && !empty($_POST['mail'])){
+  if (isset($_POST['name'])) {
+    if (!empty($_POST['name'])){
+  $name = strip_tags($_POST['name']);
+  $nameFieldset = "Имя пославшего: ";
+  }
 }
+
+if (isset($_POST['mail'])) {
+  if (!empty($_POST['mail'])){
+  $mail = strip_tags($_POST['mail']);
+  $phoneFieldset = "Phone: ";
+  }
+}
+if (isset($_POST['theme'])) {
+  if (!empty($_POST['theme'])){
+  $theme = strip_tags($_POST['theme']);
+  $themeFieldset = "Тема: ";
+  }
+}
+$token = "974743208:AAHXkwt8eU7AyIYdKMxvmZjikgq8qsok-qA";
+$chat_id = "-1001377074587";
+$arr = array(
+  $nameFieldset => $name,
+  $phoneFieldset => $phone,
+  $themeFieldset => $theme
+);
+foreach($arr as $key => $value) {
+  $txt .= "<b>".$key."</b> ".$value."%0A";
+};
+$sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
+if ($sendToTelegram) {
+
+  echo '<p class="success">Спасибо за отправку вашего сообщения!</p>';
+    return true;
+} else {
+  echo '<p class="fail"><b>Ошибка. Сообщение не отправлено!</b></p>';
+}
+} else {
+  echo '<p class="fail">Ошибка. Вы заполнили не все обязательные поля!</p>';
+}
+} else {
+header ("Location: /");
+}
+
 ?>
