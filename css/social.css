@@ -1,69 +1,80 @@
-.social {
-  width: 23px;
-  padding-top: 200px;
+@media (max-width: 799px) {
+
 }
 
-.social__list {
-  list-style: none;
-  width: inherit;
-  padding: 0px;
+@media (min-width: 800px) {
+
 }
 
-.social__item {
-  margin-bottom: 15px;
-}
+@media (min-width: 1200px) {
 
-.social__link {
-  position: relative;
-}
+  .social {
+    width: 23px;
+    padding-top: 200px;
+  }
 
-.social__link--git {
-  right: 3px;
-  top: -2px;
-}
+  .social__list {
+    list-style: none;
+    width: inherit;
+    padding: 0px;
+  }
 
-.social__link--facebook {
-  right: 5px;
-}
+  .social__item {
+    margin-bottom: 15px;
+  }
 
-.social__img {
-  position: relative;
-  width: 25px;
-  height: 25px;
-  opacity: .3;
-}
+  .social__link {
+    position: relative;
+  }
 
-.social__img--instagram {
-  top: -2px;
-}
+  .social__link--git {
+    right: 3px;
+    top: -2px;
+  }
 
-.social__img--linkedin {
-  left: -2px;
-}
+  .social__link--facebook {
+    right: 5px;
+  }
 
-.social__img--facebook {
-  top: -9px;
-}
+  .social__img {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    opacity: .3;
+  }
 
-.social__link--git:hover .social__img--github,
-.social__link--linkedin:hover .social__img--linkedin,
-.social__link--htmlacademy:hover .social__img--htmlacademy,
-.social__link--instagram:hover .social__img--instagram,
-.social__link--facebook:hover .social__img--facebook,
-.social__link--git:focus .social__img--github,
-.social__link--linkedin:focus .social__img--linkedin,
-.social__link--htmlacademy:focus .social__img--htmlacademy,
-.social__link--instagram:focus .social__img--instagram,
-.social__link--facebook:focus .social__img--facebook {
-  opacity: 1;
-  transition: 0.5s;
-}
+  .social__img--instagram {
+    top: -2px;
+  }
 
-.social__link--git:active .social__img--github,
-.social__link--linkedin:active .social__img--linkedin,
-.social__link--htmlacademy:active .social__img--htmlacademy,
-.social__link--instagram:active .social__img--instagram,
-.social__link--facebook:active .social__img--facebook {
-  opacity: .5;
-  transition: 0.5s;
+  .social__img--linkedin {
+    left: -2px;
+  }
+
+  .social__img--facebook {
+    top: -9px;
+  }
+
+  .social__link--git:hover .social__img--github,
+  .social__link--linkedin:hover .social__img--linkedin,
+  .social__link--htmlacademy:hover .social__img--htmlacademy,
+  .social__link--instagram:hover .social__img--instagram,
+  .social__link--facebook:hover .social__img--facebook,
+  .social__link--git:focus .social__img--github,
+  .social__link--linkedin:focus .social__img--linkedin,
+  .social__link--htmlacademy:focus .social__img--htmlacademy,
+  .social__link--instagram:focus .social__img--instagram,
+  .social__link--facebook:focus .social__img--facebook {
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  .social__link--git:active .social__img--github,
+  .social__link--linkedin:active .social__img--linkedin,
+  .social__link--htmlacademy:active .social__img--htmlacademy,
+  .social__link--instagram:active .social__img--instagram,
+  .social__link--facebook:active .social__img--facebook {
+    opacity: .5;
+    transition: 0.5s;
+  }
 }

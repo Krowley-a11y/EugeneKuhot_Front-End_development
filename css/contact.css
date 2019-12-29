@@ -1,102 +1,112 @@
-.contact {
-  height: 650px;
-  background: #000000;
+@media (max-width: 799px) {
+
 }
 
-.contact__wrapper {
-  display: flex;
-  padding-top: 50px;
+@media (min-width: 800px) {
+
 }
 
-.contact__description-wrapper {
-  padding-top: 155px;
-  margin-right: 105px;
-}
+@media (min-width: 1200px) {
+  .contact {
+    height: 650px;
+    background: #000000;
+  }
 
-.contact__title {
-  margin: 0;
-  color: #ffffff;
-  font-size: 38px;
-}
+  .contact__wrapper {
+    display: flex;
+    padding-top: 50px;
+  }
 
-.contact__description {
-  color: #d8d8d8;
-  font-size: 16px;
-  margin: 45px 0;
-}
+  .contact__description-wrapper {
+    padding-top: 155px;
+    margin-right: 105px;
+  }
 
-.contact-list {
-  list-style: none;
-  padding: 0;
-  line-height: 36px;
-}
+  .contact__title {
+    margin: 0;
+    color: #ffffff;
+    font-size: 38px;
+  }
 
-.contact__item {
-  font-size: 15px;
-  color: #ffffff;
-}
+  .contact__description {
+    color: #d8d8d8;
+    font-size: 16px;
+    margin: 45px 0;
+  }
 
-.contact-form {
-  padding: 70px 35px;
-  height: 410px;
-  width: 590px;
-  background: #0c0c0c;
-  display: flex;
-  flex-wrap: wrap;
-}
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    line-height: 36px;
+  }
 
-.contact-form__name,
-.contact-form__mail,
-.contact-form__theme,
-.contact-form__mail-text {
-  background: #1c1c1c;
-  border: none;
-  margin-bottom: 30px;
-  padding: 20px;
-  box-sizing: border-box;
-  color: #ffffff;
-}
+  .contact__item {
+    font-size: 15px;
+    color: #ffffff;
+  }
 
-.contact-form__name,
-.contact-form__mail,
-.contact-form__theme {
-  height: 50px;
-}
+  .contact-form {
+    padding: 70px 35px;
+    height: 410px;
+    width: 590px;
+    background: #0c0c0c;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.contact-form__submit {
-  opacity: .8;
-  height: 55px;
-  cursor: pointer;
-  padding: 18px;
-  background: #000000;
-  border: none;
-  color: #ffffff;
-}
+  .contact-form__name,
+  .contact-form__mail,
+  .contact-form__theme,
+  .contact-form__mail-text {
+    background: #1c1c1c;
+    border: none;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+  }
 
-.contact-form__submit:hover {
-  opacity: 1;
-  transition: .3s;
-}
+  .contact-form__name,
+  .contact-form__mail,
+  .contact-form__theme {
+    height: 50px;
+  }
 
-.contact-form__name,
-.contact-form__mail {
-  width: 47%;
-}
+  .contact-form__submit {
+    opacity: .8;
+    height: 55px;
+    cursor: pointer;
+    padding: 18px;
+    background: #000000;
+    border: none;
+    color: #ffffff;
+  }
 
-.contact-form__name {
-  margin-right: 35px;
-}
+  .contact-form__submit:hover {
+    opacity: 1;
+    transition: .3s;
+  }
 
-.contact-form__theme,
-.contact-form__mail-text {
-  width: 100%;
-}
+  .contact-form__name,
+  .contact-form__mail {
+    width: 47%;
+  }
 
-.contact-form__mail-text {
-  height: 170px;
-  resize: none;
-}
+  .contact-form__name {
+    margin-right: 35px;
+  }
 
-.contact__link {
-  color: #ffffff;
+  .contact-form__theme,
+  .contact-form__mail-text {
+    width: 100%;
+  }
+
+  .contact-form__mail-text {
+    height: 170px;
+    resize: none;
+  }
+
+  .contact__link {
+    color: #ffffff;
+  }
 }

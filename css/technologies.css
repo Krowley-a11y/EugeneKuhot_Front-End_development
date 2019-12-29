@@ -1,62 +1,72 @@
-.technologies {
-  padding: 100px 0 150px;
+@media (max-width: 799px) {
+
 }
 
-.technologies__list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 75px 0 0 0;
+@media (min-width: 800px) {
+
 }
 
-.technologies__title-wrapper {
-  display: flex;
-  flex-direction: column;
-}
+@media (min-width: 1200px) {
 
-.technologies__title {
-  margin: 0 auto;
-}
+  .technologies {
+    padding: 100px 0 150px;
+  }
 
-.technologies__text {
-  margin: 20px auto;
-  max-width: 420px;
-  text-align: center;
-}
+  .technologies__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 75px 0 0 0;
+  }
 
-.technologies__item {
-  display: flex;
-  flex-direction: column;
-  height: 150px;
-  width: 375px;
-  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-  background: url(../img/png/tech-icon.png) no-repeat center 35px;
-  padding: 85px 0 0 0;
-}
+  .technologies__title-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 
-.technologies__item-title {
-  margin: 0 auto;
-}
+  .technologies__title {
+    margin: 0 auto;
+  }
 
-.technologies__item:nth-child(2) {
-  margin: 0 30px 30px;
-}
+  .technologies__text {
+    margin: 20px auto;
+    max-width: 420px;
+    text-align: center;
+  }
 
-.technologies__item:nth-child(5) {
-  margin: 0 30px;
-}
+  .technologies__item {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    width: 375px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    background: url(../img/png/tech-icon.png) no-repeat center 35px;
+    padding: 85px 0 0 0;
+  }
 
-.technologies__description {
-  margin: 25px auto 0 auto;
-  max-width: 325px;
-  text-align: center;
-}
+  .technologies__item-title {
+    margin: 0 auto;
+  }
 
-.technologies__item:hover {
-  background: url(../img/png/tech-icon-whitr.png) no-repeat center 35px,
-              #000000;
-  color: #ffffff;
-  transition: .3s;
-}
+  .technologies__item:nth-child(2) {
+    margin: 0 30px 30px;
+  }
 
+  .technologies__item:nth-child(5) {
+    margin: 0 30px;
+  }
+
+  .technologies__description {
+    margin: 25px auto 0 auto;
+    max-width: 325px;
+    text-align: center;
+  }
+
+  .technologies__item:hover {
+    background: url(../img/png/tech-icon-whitr.png) no-repeat center 35px,
+                #000000;
+    color: #ffffff;
+    transition: .3s;
+  }
+}

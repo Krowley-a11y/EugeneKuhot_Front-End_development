@@ -1,57 +1,68 @@
-.skills__list {
-  display: flex;
-  padding: 0px;
-  width: 100%;
-  list-style: none;
-  background-color: #ffffff;
-  margin: 0px;
-}
-
-.skills__item {
-  width: 33%;
-  padding: 30px 20px;
-  text-align: center;
-  box-shadow: -1px 1px 5px rgba(0,0,0,0.5);
+@media (max-width: 799px) {
 
 }
 
-.skill__title {
-  margin-top: 0px;
+@media (min-width: 800px) {
+
 }
 
-.skills__item:hover .skills__description,
-.skills__item:focus .skills__description {
-  transform: scale(1.1, 1.1);
-  transition: 0.4s;
-  cursor: pointer;
-}
+@media (min-width: 1200px) {
 
-.certificate-overlay {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: -40px 0 40px -40px rgba(2,4,6,.75), 40px 0 40px -40px rgba(2,4,6,.75), 0 8px 20px 2px rgba(2,4,6,.2);
-  box-shadow: -40px 0 40px -40px rgba(2,4,6,.75), 40px 0 40px -40px rgba(2,4,6,.75), 0 8px 20px 2px rgba(2,4,6,.2);
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  padding-top: 10vh;
-}
+  .skills__list {
+    display: flex;
+    padding: 0px;
+    width: 100%;
+    list-style: none;
+    background-color: #ffffff;
+    margin: 0px;
+  }
 
-.certificate1,
-.certificate2,
-.certificate3 {
-  display: block;
-  transition: 1s;
-  margin: auto;
-  width: 60vh;
-  height: 90vh;
-}
+  .skills__item {
+    width: 33%;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: -1px 1px 5px rgba(0,0,0,0.5);
 
-.hidden {
-  display: none;
+  }
+
+  .skill__title {
+    margin-top: 0px;
+  }
+
+  .skills__item:hover .skills__description,
+  .skills__item:focus .skills__description {
+    transform: scale(1.1, 1.1);
+    transition: 0.4s;
+    cursor: pointer;
+  }
+
+  .certificate-overlay {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: -40px 0 40px -40px rgba(2,4,6,.75), 40px 0 40px -40px rgba(2,4,6,.75), 0 8px 20px 2px rgba(2,4,6,.2);
+    box-shadow: -40px 0 40px -40px rgba(2,4,6,.75), 40px 0 40px -40px rgba(2,4,6,.75), 0 8px 20px 2px rgba(2,4,6,.2);
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+
+  .certificate1,
+  .certificate2,
+  .certificate3 {
+    display: block;
+    transition: 1s;
+    margin: auto;
+    width: 60vh;
+    height: 90vh;
+  }
+
+  .hidden {
+    display: none;
+  }
 }
