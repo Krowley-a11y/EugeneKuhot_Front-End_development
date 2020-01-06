@@ -1,15 +1,4 @@
-@media (max-width: 799px) {
-
-}
-
-@media (min-width: 800px) {
-
-}
-
-@media (min-width: 1200px) {
-
-  .page-main__linear-wrapper {
-    padding: 145px 0px;
-    background: linear-gradient(11deg, #ffffff 50%, #000000 50%);
-  }
+.page-main__linear-wrapper {
+  padding: 145px 0px;
+  background: linear-gradient(11deg, #ffffff 50%, #000000 50%);
 }
