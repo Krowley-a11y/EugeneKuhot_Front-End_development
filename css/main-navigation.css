@@ -1,5 +1,6 @@
 .main-navigation {
   padding-top: 20px;
+  margin-left: auto;
 }
 
 .main-navigation__list {
@@ -61,5 +62,12 @@
 
   .main-navigation__description:active {
     opacity: 1;
+  }
+}
+
+@media (max-width: 839px) {
+  .main-navigation {
+    margin: auto;
+    padding: 0;
   }
 }

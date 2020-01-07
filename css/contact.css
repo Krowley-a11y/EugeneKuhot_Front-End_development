@@ -132,3 +132,35 @@
     padding-top: 100px;
   }
 }
+
+@media (max-width: 839px) {
+
+  .contact {
+    height: auto;
+  }
+
+  .contact__wrapper {
+    flex-direction: column;
+  }
+
+  .contact__description-wrapper {
+    margin-right: 0;
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .contact__description {
+    margin: 25px 0;
+  }
+
+  .contact-form {
+    box-sizing: border-box;
+    padding: 40px 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-form__submit {
+    width: 100%;
+  }
+}

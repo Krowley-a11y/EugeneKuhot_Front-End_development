@@ -123,3 +123,15 @@
     background-position-x: -200px;
   }
 }
+
+@media (max-width: 839px) {
+  .page-header__wrapper {
+    background-position-x: -550px;
+    background-position-y: -35px;
+    box-shadow: inset 53px 0px 450px 65px #000;
+  }
+
+  .page-header__greeting-wrapper {
+    padding-top: 270px;
+  }
+}

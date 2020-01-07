@@ -171,3 +171,48 @@
     margin-right: 5%;
   }
 }
+
+@media (max-width: 839px) {
+
+  .my-goals__wrapper {
+    background: #000000;
+  }
+
+  .my-goals {
+    flex-direction: column;
+  }
+
+  .my-goals__skill-table-wrapper {
+    margin-right: 0;
+  }
+
+  .my-goals__description-block {
+    width: 100%;
+    margin-top: 50px;
+    color: #ffffff;
+  }
+
+  .my-goals__button {
+    margin: auto;
+    width: 145px;
+  }
+
+  .my-goals__desc-title,
+  .my-goals__description {
+    text-align: center;
+  }
+
+  .my-goals__button-black {
+    background: white;
+    color: #000;
+    border-right: 1px solid #000000;
+  }
+
+  .my-goals__button-white {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .my-goals__button-white::after {
+    display: none;
+  }
+}

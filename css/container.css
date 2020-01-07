@@ -9,3 +9,9 @@
     width: 800px;
   }
 }
+
+@media (max-width: 839px) {
+  .container {
+    width: 450px;
+  }
+}
