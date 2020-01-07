@@ -60,3 +60,23 @@
   color: #ffffff;
   transition: .3s;
 }
+
+@media (max-width: 1239px) {
+
+  .technologies__list {
+    justify-content: space-between;
+  }
+
+  .technologies__item {
+    width: 370px;
+    margin: 0 0 20px 0;
+  }
+
+  .technologies__item:nth-child(2) {
+    margin: 0 0 20px 0;
+  }
+
+  .technologies__item:nth-child(5) {
+    margin: 0;
+  }
+}

@@ -68,3 +68,9 @@
   opacity: .5;
   transition: 0.5s;
 }
+
+@media (max-width: 1239px) {
+  .social {
+    padding-top: 45px;
+  }
+}

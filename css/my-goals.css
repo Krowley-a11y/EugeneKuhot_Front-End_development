@@ -151,3 +151,23 @@
   border-radius: 50%;
   background: #f7f7f7;
 }
+
+@media (max-width: 1239px) {
+  .my-goals__skill-table-wrapper {
+    min-width: 350px;
+  }
+
+  .my-goals__description-block {
+    padding: 0;
+  }
+
+  .my-goals {
+    background: none;
+    padding: 30px 0;
+  }
+
+  .my-goals__skill-table-wrapper {
+    min-width: 40%;
+    margin-right: 5%;
+  }
+}

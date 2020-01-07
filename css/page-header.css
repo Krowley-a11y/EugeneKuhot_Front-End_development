@@ -117,3 +117,9 @@
   opacity: 1;
   transition: .3s;
 }
+
+@media (max-width: 1239px) {
+  .page-header__wrapper {
+    background-position-x: -200px;
+  }
+}

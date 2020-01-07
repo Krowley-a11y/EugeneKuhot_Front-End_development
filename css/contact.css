@@ -5,6 +5,7 @@
 
 .contact__wrapper {
   display: flex;
+  justify-content: space-between;
   padding-top: 50px;
 }
 
@@ -120,4 +121,14 @@
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+}
+
+@media (max-width: 1239px) {
+  .contact-form__name {
+    margin-right: 24px;
+  }
+
+  .contact__description-wrapper {
+    padding-top: 100px;
+  }
 }
