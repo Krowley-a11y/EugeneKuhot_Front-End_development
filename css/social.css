@@ -73,4 +73,12 @@
   .social {
     padding-top: 45px;
   }
+
+  .social__img {
+    opacity: .8;
+  }
+
+  .social__img:active {
+    opacity: 1;
+  }
 }

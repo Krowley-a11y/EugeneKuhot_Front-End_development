@@ -90,6 +90,7 @@
   .portfolio__item {
     position: relative;
     height: 270px;
+    opacity: 1;
   }
 
   .portfolio__item:first-child {

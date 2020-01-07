@@ -53,3 +53,13 @@
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
+
+@media (max-width: 1239px) {
+  .main-navigation__description {
+    opacity: .8;
+  }
+
+  .main-navigation__description:active {
+    opacity: 1;
+  }
+}

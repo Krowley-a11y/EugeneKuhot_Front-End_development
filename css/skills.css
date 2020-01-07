@@ -63,3 +63,12 @@
 .hidden {
   display: none;
 }
+
+@media (max-width: 1239px) {
+  .certificate1,
+  .certificate2,
+  .certificate3 {
+    width: 500px;
+    height: 700px;
+  }
+}
