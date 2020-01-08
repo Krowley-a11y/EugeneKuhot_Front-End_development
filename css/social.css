@@ -82,3 +82,10 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 839px) {
+  .social {
+    position: relative;
+    right: 258px;
+  }
+}

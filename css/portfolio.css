@@ -94,32 +94,90 @@
   }
 
   .portfolio__item:first-child {
-    width: 432px;
+    width: 399px;
     margin-right: 35px;
     background: url(../img/jpg/Device-tablet.jpg) no-repeat;
+    background-position-x: -17px;
   }
 
   .portfolio__item:nth-child(2) {
-    width: 334px;
+    width: 301px;
     background: url(../img/jpg/kekstagram-tablet.jpg) no-repeat;
+    background-position-x: -12px;
     top: -270px;
-    right: -467px;
+    right: -409px;
   }
 
   .portfolio__item:nth-child(5) {
+    width: 450px;
     top: -545px;
     background-position-y: -23px;
   }
 
   .portfolio__item:nth-child(3) {
+    width: 250px;
     top: 30px;
-    right: -150px;
+    right: -114px;
+    background-position-x: -13px;
   }
 
   .portfolio__item:nth-child(4) {
-    width: 800px;
+    width: 710px;
     margin: 0;
     background: url(../img/jpg/catenergy-tablet.jpg);
+    background-position-x: -40px;
     top: 60px;
+  }
+}
+
+@media (max-width: 839px) {
+
+  .portfolio__wrapper {
+    padding: 50px;
+  }
+
+  .portfolio__description {
+    width: 100%;
+  }
+
+  .portfolio__item:first-child,
+  .portfolio__item:nth-child(2),
+  .portfolio__item:nth-child(3),
+  .portfolio__item:nth-child(4),
+  .portfolio__item:nth-child(5) {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .portfolio__item:first-child {
+    background: url(../img/jpg/Device-mobile.jpg) no-repeat;
+    height: 180px;
+  }
+
+  .portfolio__item:nth-child(2) {
+    background: url(../img/jpg/kekstagram-mobile.jpg) no-repeat;
+    height: 227px;
+  }
+
+  .portfolio__item:nth-child(3) {
+    background-position-x: 5px;
+    background-repeat: no-repeat;
+  }
+
+  .portfolio__item:nth-child(4) {
+    background: url(../img/jpg/catenergy-mobile.jpg) no-repeat;
+    height: 206px;
+  }
+
+  .portfolio__item:nth-child(5) {
+    background-position-x: -90px;
+  }
+
+  .portfolio__item {
+    position: static;
+  }
+
+  .portfolio__list {
+    height: auto;
   }
 }

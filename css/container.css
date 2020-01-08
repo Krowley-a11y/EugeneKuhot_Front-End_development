@@ -6,12 +6,12 @@
 
 @media (max-width: 1239px) {
   .container {
-    width: 800px;
+    width: 710px;
   }
 }
 
 @media (max-width: 839px) {
   .container {
-    width: 450px;
+    width: 280px;
   }
 }

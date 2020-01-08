@@ -6,7 +6,7 @@
 .experience__wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 65px 0 115px 0;
+  padding: 65px 0;
 /*  background: -webkit-linear-gradient(left, #000000 40%, #ffffff 40%);
   background: -o-linear-gradient(left, #000000 40%, #ffffff 40%);
   background: linear-gradient(to right, #000000 40%, #ffffff 40%);*/
@@ -18,78 +18,101 @@
   margin-bottom: 70px;
 }
 
-.experience__list,
-.experiene__dates,
-.experience__authority {
-  padding: 0;
-  list-style: none;
-}
-
-.experience__desc-wrapper {
-  display: flex;
-  width: 44%;
-  flex-direction: column;
-}
-
 .experience__list {
+  list-style: none;
+  padding: 0;
+}
+
+.experience__part {
   display: flex;
-  width: 38%;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0;
-  padding-bottom: 54px;
+  margin-bottom: 25px;
 }
 
-.experience__authority li {
-  margin-bottom: 8px;
-  color: #000000;
-}
-
-.experiene__dates {
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 15%;
-  margin: 0 3% 0 0;
-  padding: 3px 0 58px 0;
-}
-
-.experiene__dates li {
-  text-align: center;
-}
-
-.experience__authority {
-  margin: 0;
-  font-size: 18px;
-}
-
-.experience__authority:first-child {
-  margin-bottom: 37px;
-}
-
-.experience__place {
-  display: flex;
-  margin: 0;
-  font-size: 22px;
+.experience__date {
+  width: 170px;
 }
 
 .experience__star {
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   margin-right: 10px;
 }
 
-.experiene__date-frontend {
-  margin-top: 115px;
+.experience__firm {
+  display: flex;
+  width: 400px;
+  margin-right: 50px;
 }
 
-.experience__combiway {
-  color: red;
+.experience__profession,
+.experience__parag {
+  margin: 0 0 10px 0;
 }
 
-.experience__combiway:hover,
-.experience__combiway:focus {
-  text-decoration: underline;
-  transition: .3s;
+.experience__desc {
+  width: 540px;
+}
+
+@media (max-width: 1239px) {
+
+  .experience__date {
+    width: 75px;
+    margin-right: 29px;
+    text-align: center;
+  }
+
+  .experience__firm {
+    width: 300px;
+    margin-right: 0;
+  }
+
+  .experience__part {
+    width: 710px;
+  }
+
+  .experience__profession {
+    width: 250px;
+  }
+}
+
+@media (max-width: 839px) {
+
+  .experience__wrapper {
+    padding: 50px 0;
+  }
+
+  .experience__date {
+    width: 100%;
+    margin: 0;
+  }
+
+  .experience__firm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .experience__part {
+    width: 280px;
+    flex-wrap: wrap;
+  }
+
+  .experience__star {
+    width: 30px;
+    margin: 15px auto;
+  }
+
+  .experience__desc {
+    width: 280px;
+    text-align: center;
+  }
+
+  .experience__title {
+    margin-bottom: 40px;
+  }
+
+  .experience__profession {
+    text-align: center;
+  }
 }

@@ -120,18 +120,27 @@
 
 @media (max-width: 1239px) {
   .page-header__wrapper {
-    background-position-x: -200px;
+    background-position-x: -285px;
   }
 }
 
 @media (max-width: 839px) {
   .page-header__wrapper {
-    background-position-x: -550px;
-    background-position-y: -35px;
-    box-shadow: inset 53px 0px 450px 65px #000;
+    background-image: url(../img/jpg/header11-tablet.jpg);
+    background-position-x: -175px;
   }
 
   .page-header__greeting-wrapper {
     padding-top: 270px;
+    width: 100%;
+  }
+
+  .page-header__middle {
+    position: relative;
+  }
+
+  .social {
+    position: absolute;
+    right: 258px;
   }
 }

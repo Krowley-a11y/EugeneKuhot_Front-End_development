@@ -124,12 +124,23 @@
 }
 
 @media (max-width: 1239px) {
-  .contact-form__name {
-    margin-right: 24px;
+  .contact-form__name,
+  .contact-form__mail {
+    width: 100%;
+    margin-right: 0;
   }
 
   .contact__description-wrapper {
     padding-top: 100px;
+  }
+
+  .contact-form {
+    padding: 35px 35px;
+    height: auto;
+  }
+
+  .contact-form__submit {
+    width: 100%;
   }
 }
 
