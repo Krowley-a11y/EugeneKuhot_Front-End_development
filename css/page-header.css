@@ -143,4 +143,8 @@
     position: absolute;
     right: 258px;
   }
+
+  .page-header__download-cv {
+    border: 1px solid white;
+  }
 }

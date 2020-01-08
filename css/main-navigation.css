@@ -69,5 +69,19 @@
   .main-navigation {
     margin: auto;
     padding: 0;
+    width: 100%;
+  }
+
+  .main-navigation__list {
+    margin: 0;
+    justify-content: space-around;
+  }
+
+  .main-navigation__item:not(:last-child) {
+    margin: 0;
+  }
+
+  .main-navigation__item {
+    font-size: 14px;
   }
 }
