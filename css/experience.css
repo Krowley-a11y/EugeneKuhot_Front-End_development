@@ -53,6 +53,15 @@
   width: 540px;
 }
 
+.experience__combiway {
+  color: red;
+}
+
+.experience__combiway:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 @media (max-width: 1239px) {
 
   .experience__date {
