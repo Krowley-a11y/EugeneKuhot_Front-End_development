@@ -100,11 +100,27 @@
   background: #ffffff;
   border-radius: 50%;
   padding: 8px;
+  height: 53px;
 }
 
-.backToTop span {
-  text-align: center;
-  font-weight: bold;
+.backToTop__arrow {
+  display: block;
+  width: 33px;
+  height: 5px;
+  background: black;
+  position: absolute;
+  top: 44%;
+  border-radius: 3px;
+}
+
+.backToTop__arrow:first-child {
+  transform: rotate(-45deg);
+  left: 23px;
+}
+
+.backToTop__arrow:nth-child(2) {
+  left: 43px;
+  transform: rotate(45deg);
 }
 
 .backToTop-show {
@@ -147,4 +163,28 @@
   .page-header__download-cv {
     border: 1px solid white;
   }
+
+  .backToTop {
+    left: 45px;
+    height: 55px;
+    width: 57px;
+  }
+
+  .backToTop-wrapper {
+    position: relative;
+    height: 39px;
+  }
+
+  .backToTop__arrow {
+    top: 42%;
+  }
+
+  .backToTop__arrow:first-child {
+    left: 2px;
+  }
+
+  .backToTop__arrow:nth-child(2) {
+    left: 22px;
+  }
+
 }

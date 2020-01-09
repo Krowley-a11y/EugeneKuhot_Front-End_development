@@ -6,7 +6,7 @@
 .experience__wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 65px 0;
+  padding: 35px 0 65px;
 /*  background: -webkit-linear-gradient(left, #000000 40%, #ffffff 40%);
   background: -o-linear-gradient(left, #000000 40%, #ffffff 40%);
   background: linear-gradient(to right, #000000 40%, #ffffff 40%);*/

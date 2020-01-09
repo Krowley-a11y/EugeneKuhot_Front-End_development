@@ -82,4 +82,11 @@
     width: 100%;
     padding: 30px 0;
   }
+
+  .certificate1,
+  .certificate2,
+  .certificate3 {
+    width: 280px;
+    height: 390px;
+  }
 }
