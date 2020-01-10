@@ -59,7 +59,7 @@
   function portfolioAnimation () {
     var scrolled = window.pageYOffset;
     var coords = pageHeaderBlockHeight + pageMainBlockHeight +
-    experienceBlockHeight + goalsBlockHeight + technologiesBlockHeight - scrollFix;
+    experienceBlockHeight + goalsBlockHeight + technologiesBlockHeight - scrollFix * 2;
 
     if (scrolled > coords) {
       for (var i = 0; i < portfolioSite.length; i++) {
