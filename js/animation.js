@@ -1,6 +1,12 @@
 'use strict';
 
 (function () {
+  var pageHeaderBlockHeight = document.querySelector('.page-header').clientHeight;
+  var pageMainBlockHeight = document.querySelector('.page-main__linear-wrapper').clientHeight;
+  var experienceBlockHeight = document.querySelector('.experience').clientHeight;
+  var goalsBlockHeight = document.querySelector('.my-goals__wrapper').clientHeight;
+  var technologiesBlockHeight = document.querySelector('.technologies').clientHeight;
+
   var greetingBlock = document.querySelector('.animation-greetings');
 
   var greetingBlockAnimation = function () {
@@ -10,7 +16,7 @@
 
   var headerBack = document.querySelector('.animation-header-background');
 
-  var headerBackAnimation = function () {
+  function headerBackAnimation () {
     headerBack.classList.remove('animation-header-background');
     headerBack.classList.add('page-header__wrapper');
   }
@@ -24,13 +30,13 @@
   var goalAJ = document.querySelector('.my-goals__tech-skill-animation-aj');
   var goalPP = document.querySelector('.my-goals__tech-skill-animation-pp');
 
+  var scrollFix = 150;
+
   function goalsAnimation () {
     var scrolled = window.pageYOffset;
-    var coords = document.querySelector('.page-header').clientHeight +
-                document.querySelector('.page-main__linear-wrapper').clientHeight +
-                document.querySelector('.experience').clientHeight;;
+    var coords = pageHeaderBlockHeight + pageMainBlockHeight + experienceBlockHeight - scrollFix;
 
-    if (scrolled > coords) {
+    if (scrolled >= coords) {
       goalHTML.classList.remove('my-goals__tech-skill-animation-html');
       goalCSS.classList.remove('my-goals__tech-skill-animation-css');
       goalJS.classList.remove('my-goals__tech-skill-animation-js');
@@ -46,4 +52,21 @@
   }
 
   window.addEventListener('scroll', goalsAnimation);
+
+
+  var portfolioSite = document.querySelectorAll('.portfolio__item');
+
+  function portfolioAnimation () {
+    var scrolled = window.pageYOffset;
+    var coords = pageHeaderBlockHeight + pageMainBlockHeight +
+    experienceBlockHeight + goalsBlockHeight + technologiesBlockHeight - scrollFix;
+
+    if (scrolled > coords) {
+      for (var i = 0; i < portfolioSite.length; i++) {
+        portfolioSite[i].classList.remove('portfolio-animation');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', portfolioAnimation);
 })();

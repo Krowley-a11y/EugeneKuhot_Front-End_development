@@ -22,7 +22,7 @@
   background-repeat: no-repeat;
   height: 700px;
   padding-top: 30px;
-  box-shadow: inset 0px -65px 270px #000000;
+  box-shadow: inset -200px -65px 270px #000000;
   background-position-x: 0px;
   transition: 1s;
 }
@@ -167,6 +167,7 @@
   .page-header__wrapper {
     background-image: url(../img/jpg/header11-tablet.jpg);
     background-position-x: -175px;
+    box-shadow: inset -10px -65px 270px #000000;
   }
 
   .page-header__greeting-wrapper {
