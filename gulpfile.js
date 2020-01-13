@@ -53,7 +53,6 @@ gulp.task("copy", function () {
  .pipe(gulp.dest("dist"));
 });
 
-
 gulp.task("server", function () {
   server.init({server: "source/" });
 
@@ -62,6 +61,5 @@ gulp.task("server", function () {
 });
 
 gulp.task("start", gulp.series("css", "server"));
-
 
 gulp.task("product", gulp.series("css", "images", "webp", "copy"));
