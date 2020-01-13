@@ -1,0 +1,214 @@
+.animation-greetings {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+}
+
+.animation-header-background {
+  background-image: url(../img/jpg/header111.webp);
+  background-repeat: no-repeat;
+  height: 700px;
+  padding-top: 30px;
+  box-shadow: inset 0px -65px 270px #000000;
+  background-position-x: 500px;
+}
+
+.page-header {
+  background-color: #000000;
+}
+
+.page-header__wrapper {
+  background-image: url(../img/jpg/header111.webp);
+  background-repeat: no-repeat;
+  height: 700px;
+  padding-top: 30px;
+  box-shadow: inset -200px -65px 270px #000000;
+  background-position-x: 0px;
+  transition: 1s;
+}
+
+.page-header__header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__middle {
+  display: flex;
+  justify-content: space-between;
+  height: inherit;
+}
+
+.page-header__greeting-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  margin: auto 0;
+  transition: 1s;
+}
+
+.page-header__greeting {
+  margin: auto;
+  color: #ffffff;
+  text-align: center;
+}
+
+.page-header__greeting-description {
+  color: #ffffff;
+  max-width: 487px;
+  text-align: center;
+  line-height: 28px;
+  margin: auto;
+}
+
+.page-header__download-cv {
+  display: flex;
+  width: 130px;
+  margin: auto;
+  transition: .3s;
+}
+
+.page-header__download-cv:hover,
+.page-header__download-cv:focus {
+  box-shadow: 0 0 10px #ffffff;
+  transition: .3s;
+}
+
+.page-header__download-black::after {
+  content:"";
+  position: absolute;
+  top: 14px;
+  left: 40px;
+  background-repeat: no-repeat;
+  background-image: url(../img/png/arrow.webp);
+  width: 15px;
+  height: 11px;
+}
+
+.page-header__download-cv:hover .page-header__download-black::after,
+.page-header__download-cv:focus .page-header__download-black::after {
+   left: 45px;
+   transition: .3s;
+}
+
+.page-header__download-white {
+  padding: 10px 10px 10px 15px;
+  background-color: #ffffff;
+  font-weight: 600;
+}
+
+.page-header__download-black {
+  position: relative;
+  background-color: #000000;
+  color: white;
+  padding: 10px 35px 10px 10px;
+}
+
+.backToTop {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  background: #000000;
+  bottom: 45px;
+  right: 45px;
+  transition: all 0.5s ease-in;
+  opacity: 0;
+  border-radius: 50%;
+  z-index: 1;
+  padding: 15px;
+}
+
+.backToTop-wrapper {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 8px;
+  height: 53px;
+}
+
+.backToTop__arrow {
+  display: block;
+  width: 33px;
+  height: 5px;
+  background: black;
+  position: absolute;
+  top: 44%;
+  border-radius: 3px;
+}
+
+.backToTop__arrow:first-child {
+  transform: rotate(-45deg);
+  left: 23px;
+}
+
+.backToTop__arrow:nth-child(2) {
+  left: 43px;
+  transform: rotate(45deg);
+}
+
+.backToTop-show {
+  opacity: .6;
+  cursor: pointer;
+}
+
+.backToTop-show:hover,
+.backToTop-show:focus {
+  opacity: 1;
+  transition: .3s;
+}
+
+@media (max-width: 1239px) {
+  .page-header__wrapper {
+    background-position-x: -285px;
+  }
+}
+
+@media (max-width: 839px) {
+  .page-header__wrapper {
+    background-image: url(../img/jpg/header11-tablet.jpg);
+    background-position-x: -175px;
+    box-shadow: inset -10px -65px 270px #000000;
+  }
+
+  .page-header__greeting-wrapper {
+    padding-top: 270px;
+    width: 100%;
+  }
+
+  .page-header__middle {
+    position: relative;
+  }
+
+  .social {
+    position: absolute;
+    right: 258px;
+  }
+
+  .page-header__download-cv {
+    border: 1px solid white;
+  }
+
+  .backToTop {
+    left: 45px;
+    height: 55px;
+    width: 57px;
+  }
+
+  .backToTop-wrapper {
+    position: relative;
+    height: 39px;
+  }
+
+  .backToTop__arrow {
+    top: 42%;
+  }
+
+  .backToTop__arrow:first-child {
+    left: 2px;
+  }
+
+  .backToTop__arrow:nth-child(2) {
+    left: 22px;
+  }
+
+}
