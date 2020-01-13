@@ -1,28 +1,42 @@
 {
-  "name": "my_cv",
-  "version": "15.0.0",
-  "private": true,
-  "description": "Личный проект «Кекстаграм» от HTML Academy",
+  "name": "mycv",
+  "version": "1.0.0",
+  "description": "mycv",
+  "main": "index.js",
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp css",
+    "start": "gulp start"
+  },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/htmlacademy-javascript/632047-kekstagram-18.git"
+    "url": "git+https://github.com/Jesus-Akbar/EugeneKuhot_Front-End_development.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/htmlacademy-javascript/632047-kekstagram-18/issues"
+    "url": "https://github.com/Jesus-Akbar/EugeneKuhot_Front-End_development/issues"
+  },
+  "homepage": "https://github.com/Jesus-Akbar/EugeneKuhot_Front-End_development#readme",
+  "dependencies": {
+    "npx": "^10.2.0"
   },
   "devDependencies": {
-    "eslint": "6.3.0",
-    "eslint-config-htmlacademy": "0.5.2"
-  },
-  "license": "MIT",
-  "dependencies": {},
-  "scripts": {
-    "test": "eslint js/"
-  },
-  "engines": {
-    "node": "8.11"
-  },
-  "homepage": "https://github.com/htmlacademy-javascript/632047-kekstagram-18#readme",
-  "main": "gulpfile.js",
-  "author": ""
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
+    "autoprefixer": "^9.7.3",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-less": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-webp": "^4.0.1",
+    "stylelint": "^13.0.0",
+    "stylelint-config-htmlacademy": "^0.1.4"
+  }
 }
